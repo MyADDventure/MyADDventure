@@ -17,7 +17,7 @@
         <!-- Start of home page -->
         <div data-role="page" id="home">
 <div data-theme="a" data-role="header" data-position="fixed">
-<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-right">Menu</a>
+<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-left">Menu</a>
 	<h1>My ADDventure</h1>
 	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
@@ -43,8 +43,12 @@
 
 <!-- Start of about page -->
 <div data-role="page" id="about">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-icon="delete" data-theme="a" class="ui-btn-left" data-rel="back">Menu</a>
+	<h1>About this App</h1>
+	</div><!-- /header -->
 	<div data-role="content">	
-		<p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
+	  <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Company:</strong><br><em>My ADDventure</em></p>
       <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
