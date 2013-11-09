@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+          <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="css/MyADDventure.min.css" />
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+<script type="text/javascript" src="phonegap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <title>My ADDventure</title>
+    </head>
+    <body>
+        <!-- Start of home page -->
+        <div data-role="page" id="home">
+<div data-theme="a" data-role="header" data-position="fixed">
+	<h1>My ADDventure</h1>
+	<a href="#infopanel" data-icon="bars" data-theme="a" class="ui-btn-right">About</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Home page for My ADDventure APP</p>		
+		
+	</div><!-- /content -->
+
+	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
+			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
+			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+    <!-- info panel  -->
+  <div data-role="panel" id="infopanel" data-theme="a" data-position="right" data-display="push">	
+    <div class="panel-content">
+      <h3>About the App</h3>
+      <p><strong>Developer:</strong> <em>Anthony Reynolds</em></p>
+      <p><strong>Developer:</strong> <em>Anthony Reynolds</em></p>
+      <p><strong>Company:</strong> <em>My ADDventure</em></p>
+      <p><strong>Contact:</strong> <em>app@myaddventure.org.uk</em></p>
+      <p>This app has been developed to support ADHD in Greater Manchester and give easyer access to information when on the move.</p>
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /info panel -->
+</div><!-- /home page -->
+
+
+<!-- Start of adhd page -->
+<div data-role="page" id="adhd">
+
+	<div data-theme="a" data-role="header" data-position="fixed">
+    <a href="#home" data-icon="home" data-theme="a" data-transition="slidedown">Home</a>
+		<h1>ADHD</h1>
+        <a href="#infopanel" data-icon="bars" data-theme="a">About</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#foo">Back to foo</a></p>	
+	</div><!-- /content -->
+
+	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#">ADHD</a></li>
+			<li><a href="#">Useful Links</a></li>
+			<li><a href="#">Resorces</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /adhd page -->
+<!-- Start of links page -->
+<div data-role="page" id="links">
+
+	<div data-role="header">
+		<h1>Useful Links</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
+		<p><a href="#foo">Back to foo</a></p>	
+	</div><!-- /content -->
+
+	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
+		<div data-role="navbar">
+		<ul>
+			<li><a href="#">ADHD</a></li>
+			<li><a href="#">Useful Links</a></li>
+			<li><a href="#">Resorces</a></li>
+		</ul>
+	</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /links page -->
+
+    </body>
+</html>
