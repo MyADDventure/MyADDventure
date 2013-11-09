@@ -44,7 +44,7 @@
 <!-- Start of about page -->
 <div data-role="page" id="about">
 <div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-icon="delete" data-theme="a" class="ui-btn-left" data-rel="back">Menu</a>
+<a href="#" data-icon="delete" data-theme="a" class="ui-btn-left" data-rel="back">Close</a>
 	<h1>About this App</h1>
 	</div><!-- /header -->
 	<div data-role="content">	
@@ -61,146 +61,85 @@
 <div data-role="page" id="adhd">
 
 	<div data-theme="a" data-role="header" data-position="fixed">
-    <a href="#home" data-icon="home" data-theme="a" data-transition="slidedown">Home</a>
-		<h1>ADHD</h1>
-        <a href="#infopanel" data-icon="bars" data-theme="a">About</a>
+<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-left">Menu</a>
+	<h1>ADHD</h1>
+	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#foo">Back to foo</a></p>	
+		<ul data-role="listview">
+			<li><a href="#aboutadhd" data-rel="dialog" data-transition="slidedown">About ADHD</a></li>
+			<li><a href="#adhdsymtoms" data-rel="dialog" data-transition="slidedown">Symptoms of ADHD</a></li>
+			<li><a href="#adhdchars" data-rel="dialog" data-transition="slidedown">ADHD Characteristics</a></li>
+            <li><a href="#diagadhd" data-rel="dialog" data-transition="slidedown">Diagnosing ADHD</a></li>
+            <li><a href="#causeadhd" data-rel="dialog" data-transition="slidedown">What causes ADHD?</a></li>
+            <li><a href="#treatadhd" data-rel="dialog" data-transition="slidedown">Treatment for ADHD</a></li>
+            <li><a href="#liveadhd" data-rel="dialog" data-transition="slidedown">Living with ADHD</a></li>
+		</ul>
 	</div><!-- /content -->
 
-	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
+          <!-- menu panel  -->
+  <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
+    <div class="panel-content">
+      <h3>Menu</h3>
+     <ul data-role="listview">
+			<li><a href="#home" data-transition="slidedown">Home</a></li>
 			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
 			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
             <li><a href="#contact" data-transition="slidedown">Contact Us</a></li>
 		</ul>
-	</div><!-- /navbar -->
-	</div><!-- /footer -->
-    <!-- info panel  -->
-  <div data-role="panel" id="infopanel" data-theme="a" data-position="right" data-display="push">	
-    <div class="panel-content">
-      <h3>About the App</h3>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Company:</strong><br><em>My ADDventure</em></p>
-      <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
-      <p>This app has been developed to support ADHD in Greater Manchester and give easyer access to information when on the move.</p>
     </div><!-- /content wrapper for padding -->
-  </div><!-- /info panel -->
+  </div><!-- /menu panel -->
 </div><!-- /adhd page -->
-<!-- Start of links page -->
-<div data-role="page" id="links">
 
+<!-- Start of about adhd dialog -->
+<div data-role="page" id="aboutadhd">
 <div data-theme="a" data-role="header" data-position="fixed">
-<a href="#home" data-icon="home" data-theme="a" data-transition="slidedown">Home</a>
-		<h1>Useful Links</h1>
-        <a href="#infopanel" data-icon="bars" data-theme="a">About</a>
+<a href="#" data-icon="delete" data-theme="a" class="ui-btn-left" data-rel="back">Close</a>
+	<h1>About ADHD</h1>
 	</div><!-- /header -->
-
 	<div data-role="content">	
-		<p>I'm the second in the source order so I'm hidden when the page loads. I'm just shown if a link that references my id is beeing clicked.</p>		
-		<p><a href="#foo">Back to foo</a></p>	
+    <h1>What is ADHD?</h1>
+<p><strong>Attention deficit hyperactivity disorder (ADHD) is a group of behavioural symptoms that include inattentiveness, hyperactivity and impulsiveness. Attention deficit disorder (ADD) is a sub-type of ADHD.</strong></p>
+<p>Common symptoms of ADHD include:</p>
+<ul>
+<li>a short attention span</li>
+<li>restlessness or constant fidgeting</li>
+<li>being easily distracted</li>
+</ul>
+<p>ADHD can occur in people of any intellectual ability. However, many people with ADHD also have learning difficulties. They may also have additional problems such as sleep disorders.</p>
+<p>Symptoms of ADHD tend to be first noticed at an early age, and may become more noticeable when a child&#8217;s circumstances change, such as starting school.</p>
+<p>Young children are naturally active and easily distracted. However, if these features are excessive for a child&#8217;s age and general developmental level and affecting their daily life, they may indicate ADHD.</p>
+<h3>Diagnosing ADHD</h3>
+<p>ADHD is normally diagnosed between the ages of three to seven, although in some cases it may not be until much later. It is more commonly diagnosed in boys.</p>
+<p>There are several criteria that must be met for a child to be diagnosed with ADHD. Adults are harder to diagnose because there is no definitive set of age-appropriate symptoms.</p>
+<h3>What causes ADHD?</h3>
+<p>Although the exact cause of ADHD is not known, research shows that it tends to run in families. Some research also shows that there may be differences in the way the brain works in people with ADHD.</p>
+<p>Potential risk factors include:</p>
+<ul>
+<li>being male</li>
+<li>smoking, alcohol or drug abuse during pregnancy</li>
+<li>being born prematurely</li>
+</ul>
+<h3>How common is ADHD?</h3>
+<p>ADHD is the most common behavioural disorder in the UK. It is estimated the condition affects 2-5% of school-aged children and young people.</p>
+<p>ADHD can be a lifelong condition, and many children continue to have symptoms as a teenager and adult.</p>
+<p>It is estimated that more than 2 out of 3 children diagnosed with ADHD will still have symptoms as teenagers. It is then estimated that 2 out of 3 of these teenagers will show symptoms as adults.</p>
+<p>It is uncertain whether ADHD can occur in adults without first appearing in childhood.</p>
+<h3>Treating ADHD</h3>
+<p>There is no cure for ADHD, but it can be managed with appropriate educational support, advice and support for parents and the individual, and medication if necessary.</p>
+<p>Living with a child with ADHD can be challenging but it is important to remember that they cannot help their behaviour.</p>
+<p>Some issues that may arise in day to day life include:</p>
+<ul>
+<li>getting your child to sleep at night</li>
+<li>arriving at school on time</li>
+<li>listening to and carrying out instructions</li>
+<li>social occasions</li>
+<li>shopping</li>
+</ul>
+<p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Introduction.aspx" target="_blank">nhs.uk</a>.</em></span></p>
 	</div><!-- /content -->
-
-	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
-			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
-			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
-            <li><a href="#contact" data-transition="slidedown">Contact Us</a></li>
-		</ul>
-	</div><!-- /navbar -->
-	</div><!-- /footer -->
-    <!-- info panel  -->
-  <div data-role="panel" id="infopanel" data-theme="a" data-position="right" data-display="push">	
-    <div class="panel-content">
-      <h3>About the App</h3>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Company:</strong><br><em>My ADDventure</em></p>
-      <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
-      <p>This app has been developed to support ADHD in Greater Manchester and give easyer access to information when on the move.</p>
-    </div><!-- /content wrapper for padding -->
-  </div><!-- /info panel -->
-</div><!-- /links page -->
-
-<!-- Start of resorces page -->
-<div data-role="page" id="resorces">
-
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#home" data-icon="home" data-theme="a" data-transition="slidedown">Home</a>
-		<h1>Resorces</h1>
-        <a href="#infopanel" data-icon="bars" data-theme="a">About</a>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>Resources</p>	
-	</div><!-- /content -->
-
-	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
-			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
-			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
-            <li><a href="#contact" data-transition="slidedown">Contact Us</a></li>
-		</ul>
-	</div><!-- /navbar -->
-	</div><!-- /footer -->
-    <!-- info panel  -->
-  <div data-role="panel" id="infopanel" data-theme="a" data-position="right" data-display="push">	
-    <div class="panel-content">
-      <h3>About the App</h3>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Company:</strong><br><em>My ADDventure</em></p>
-      <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
-      <p>This app has been developed to support ADHD in Greater Manchester and give easyer access to information when on the move.</p>
-    </div><!-- /content wrapper for padding -->
-  </div><!-- /info panel -->
-</div><!-- /resorces page -->
-
-<!-- Start of contact page -->
-<div data-role="page" id="contact">
-
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#home" data-icon="home" data-theme="a" data-transition="slidedown">Home</a>
-		<h1>Contact Us</h1>
-        <a href="#infopanel" data-icon="bars" data-theme="a">About</a>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<p>Resources</p>	
-	</div><!-- /content -->
-
-	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
-		<div data-role="navbar">
-		<ul>
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
-			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
-			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
-            <li><a href="#contact" data-transition="slidedown">Contact Us</a></li>
-		</ul>
-	</div><!-- /navbar -->
-	</div><!-- /footer -->
-    <!-- info panel  -->
-  <div data-role="panel" id="infopanel" data-theme="a" data-position="right" data-display="push">	
-    <div class="panel-content">
-      <h3>About the App</h3>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
-      <p><strong>Company:</strong><br><em>My ADDventure</em></p>
-      <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
-      <p>This app has been developed to support ADHD in Greater Manchester and give easyer access to information when on the move.</p>
-    </div><!-- /content wrapper for padding -->
-  </div><!-- /info panel -->
-</div><!-- /contact page -->
+</div><!-- /about adhd dialog -->
 
     </body>
 </html>
