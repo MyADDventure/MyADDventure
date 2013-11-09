@@ -17,8 +17,9 @@
         <!-- Start of home page -->
         <div data-role="page" id="home">
 <div data-theme="a" data-role="header" data-position="fixed">
+<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-right">Menu</a>
 	<h1>My ADDventure</h1>
-	<a href="#infopanel" data-icon="bars" data-theme="a" class="ui-btn-right">About</a>
+	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
@@ -26,28 +27,30 @@
 		
 	</div><!-- /content -->
 
-	<div data-theme="a" data-role="footer" data-id="footer1" data-position="fixed">
-		<div data-role="navbar">
-		<ul>
+      <!-- menu panel  -->
+  <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
+    <div class="panel-content">
+      <h3>Menu</h3>
+     <ul data-role="listview">
 			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
 			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
 			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
             <li><a href="#contact" data-transition="slidedown">Contact Us</a></li>
 		</ul>
-	</div><!-- /navbar -->
-	</div><!-- /footer -->
-    <!-- info panel  -->
-  <div data-role="panel" id="infopanel" data-theme="a" data-position="right" data-display="push">	
-    <div class="panel-content">
-      <h3>About the App</h3>
-      <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /menu panel -->
+</div><!-- /home page -->
+
+<!-- Start of about page -->
+<div data-role="page" id="about">
+	<div data-role="content">	
+		<p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Company:</strong><br><em>My ADDventure</em></p>
       <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
       <p>This app has been developed to support ADHD in Greater Manchester and give easyer access to information when on the move.</p>
-    </div><!-- /content wrapper for padding -->
-  </div><!-- /info panel -->
-</div><!-- /home page -->
+	</div><!-- /content -->
+</div><!-- /page -->
 
 
 <!-- Start of adhd page -->
