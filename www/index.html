@@ -10,6 +10,11 @@
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
 <script type="text/javascript" src="phonegap.js"></script>
 <script src="js/jquery.js"></script>
+<script>
+$( document ).bind( "mobileinit", function(){
+   $( ".selector" ).dialog( "close" );
+});
+</script>
 <script src="js/jquery.mobile-1.3.2.min.js"></script>
         <title>My ADDventure</title>
     </head>
@@ -44,7 +49,7 @@
 <!-- Start of about page -->
 <div data-role="page" id="about">
 <div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-icon="delete" data-theme="a" data-rel="back"></a>
+<!--<a href="#" data-icon="delete" data-theme="a" data-rel="back"></a>-->
 	<h1>About this App</h1>
 	</div><!-- /header -->
 	<div data-role="content">	
@@ -92,14 +97,13 @@
   </div><!-- /menu panel -->
 </div><!-- /adhd page -->
 
-<!-- Start of about adhd dialog -->
+<!-- Start of about adhd page -->
 <div data-role="page" id="aboutadhd">
 <div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-icon="delete" data-theme="a" data-rel="back"></a>
+<a href="#" data-rel="back" data-icon="back">Back</a> 
 	<h1>About ADHD</h1>
 	</div><!-- /header -->
 	<div data-role="content">	
-    <h1>What is ADHD?</h1>
 <p><strong>Attention deficit hyperactivity disorder (ADHD) is a group of behavioural symptoms that include inattentiveness, hyperactivity and impulsiveness. Attention deficit disorder (ADD) is a sub-type of ADHD.</strong></p>
 <p>Common symptoms of ADHD include:</p>
 <ul>
@@ -139,7 +143,492 @@
 </ul>
 <p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Introduction.aspx" target="_blank">nhs.uk</a>.</em></span></p>
 	</div><!-- /content -->
-</div><!-- /about adhd dialog -->
+</div><!-- /about adhd page -->
 
+<!-- Start of symptoms adhd page -->
+<div data-role="page" id="adhdsymtoms">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-rel="back" data-icon="back">Back</a> 
+	<h1>ADHD Symptoms</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+<p><strong>The symptoms of attention deficit hyperactivity disorder (ADHD) can be categorised into two sets of behavioural problems.</strong></p>
+<p>Symptoms include:</p>
+<ul>
+<li>inattentiveness</li>
+<li>hyperactivity and impulsiveness</li>
+</ul>
+<p>It is not fully understood whether these problems are an extreme form of normal behaviour, or part of a separate range of behaviour.</p>
+<h3><strong>Types of ADHD</strong></h3>
+<p>A person with ADHD usually has symptoms characteristic of one of the three subtypes of the condition. The subtypes are:</p>
+<ul>
+<li>ADHD mainly inattentive</li>
+<li>ADHD mainly hyperactive-impulsive</li>
+<li>ADHD combined</li>
+</ul>
+<p>If your child has symptoms of all three behavioural problems – inattentiveness, hyperactivity and impulsiveness – they may have ADHD combined, which is the most common subtype of ADHD.</p>
+<p>Alternatively, if your child has symptoms of inattentiveness but not hyperactivity or impulsiveness, they may have ADHD mainly inattentive. This form of ADHD is also known as attention deficit disorder (ADD).</p>
+<p>Childhood ADHD is more commonly diagnosed in boys than girls, but this may be because disruptive behaviour, which the diagnosis may be partly based on, tends to be more common in boys than girls.</p>
+<p>Girls with ADHD often have the mainly inattentive form of the condition, which may make them quiet and dreamy and can sometimes go unnoticed. It is therefore possible that ADHD could be underdiagnosed in girls, and could be more common than previously thought.</p>
+<h3><strong>Symptoms in children and teenagers</strong></h3>
+<p>The symptoms of ADHD in children and teenagers are well defined. The main symptoms of each behavioural problem are detailed below.</p>
+<h4>Inattentiveness</h4>
+<p>The main symptoms of inattentiveness are:</p>
+<ul>
+<li>a short attention span</li>
+<li>being easily distracted</li>
+<li>making careless mistakes, for example in schoolwork</li>
+<li>appearing forgetful or losing things</li>
+<li>being unable to stick at tasks that are tedious or time consuming</li>
+<li>being unable to listen to or carry out instructions</li>
+<li>being unable to concentrate</li>
+<li>constantly changing activity or task</li>
+<li>having difficulty organising tasks</li>
+</ul>
+<h4>Hyperactivity</h4>
+<p>The main symptoms of hyperactivity are:</p>
+<ul>
+<li>being unable to sit still, especially in calm or quiet surroundings</li>
+<li>constantly fidgeting</li>
+<li>being unable to settle to tasks</li>
+<li>excessive physical movement</li>
+<li>excessive talking</li>
+</ul>
+<h4>Impulsiveness</h4>
+<p>The main symptoms of impulsiveness are:</p>
+<ul>
+<li>being unable to wait for a turn</li>
+<li>acting without thinking</li>
+<li>interrupting conversations</li>
+<li>little or no sense of danger</li>
+</ul>
+<p>If your child has ADHD, their symptoms usually become noticeable before the age of seven, with a diagnosis usually made between the ages of three and seven.</p>
+<p>ADHD can cause problems in a child&#8217;s life, and can often lead to underachievement at school, poor social interaction with other children and adults and problems with discipline.</p>
+<h3><strong>Related conditions in children and teenagers</strong></h3>
+<p>Although not always the case, your child may also have other problems or conditions alongside ADHD. These are explained below.</p>
+<h4>Anxiety disorder</h4>
+<p>Some children with ADHD may have an anxiety disorder that causes them to worry and be nervous most of the time. Your child may also have physical symptoms, such as a rapid heartbeat, sweating and dizziness.</p>
+<h4>Oppositional defiant disorder (ODD)</h4>
+<p>Oppositional defiant disorder (ODD) is common among children with ADHD. It is defined by negative and disruptive behaviour, particularly towards authority figures such as parents and teachers.</p>
+<h4>Conduct disorder</h4>
+<p>Children who have conduct disorder have a tendency towards highly antisocial behaviour, such as:</p>
+<ul>
+<li>stealing</li>
+<li>fighting</li>
+<li>vandalism</li>
+<li>harming people</li>
+<li>harming animals</li>
+</ul>
+<p>If your child is behaving in this way, book an appointment with your doctor as soon as possible.</p>
+<h4>Depression</h4>
+<p>It is possible for children with ADHD to become depressed as a result of their condition.</p>
+<h4>Sleep problems</h4>
+<p>Children with ADHD can be hyperactive and find it difficult to sleep at night. They may experience irregular sleeping patterns.</p>
+<h4>Epilepsy</h4>
+<p>Epilepsy is a condition of the brain that causes seizures (fits).</p>
+<h4>Tourette&#8217;s syndrome</h4>
+<p>Tourette&#8217;s syndrome is a condition of the nervous system (the nerves, brain and spinal cord) that causes involuntary movements and sounds.</p>
+<h4>Learning difficulties</h4>
+<p>It is thought that around a third of children with ADHD also have learning difficulties, such as dyslexia (difficulty reading and spelling words).</p>
+<h3><strong>Symptoms in adults</strong></h3>
+<p>In adults, the symptoms of ADHD are more difficult to define. This is largely due to a lack of research into adults with ADHD.</p>
+<p>It is still uncertain whether ADHD can occur in adults without it first appearing during childhood, although it is known that symptoms of ADHD often persist from childhood into the teenage years and adulthood. Any additional problems or conditions experienced by children with ADHD, such as depression or dyslexia, are also likely to carry into adulthood.</p>
+<p>By the age of 25, an estimated 15% of people diagnosed with childhood ADHD still have a full range of symptoms, and 65% still have some symptoms that affect their daily lives.</p>
+<p>There is no definitive list of adult ADHD symptoms, and experts agree that simply applying the childhood symptoms to adults would not work. This is because the way in which inattentiveness, hyperactivity and impulsiveness affect adults is very different from the way they affect children.</p>
+<p>For example, hyperactivity tends to decrease in adults, while inattentiveness tends to get worse as the pressure of adult life increases. Also, adult symptoms of ADHD tend to be far more subtle than childhood symptoms.</p>
+<p>Below is a list of symptoms associated with adult ADHD:</p>
+<ul>
+<li>carelessness and lack of attention to detail</li>
+<li>continually starting new tasks before finishing old ones</li>
+<li>poor organisational skills</li>
+<li>inability to focus or prioritise</li>
+<li>continually losing or misplacing things</li>
+<li>forgetfulness</li>
+<li>restlessness and edginess</li>
+<li>difficulty keeping quiet and speaking out of turn</li>
+<li>blurting responses, and poor social timing when talking to others</li>
+<li>often interrupting others</li>
+<li>mood swings</li>
+<li>irritability and a quick temper</li>
+<li>inability to deal with stress</li>
+<li>extreme impatience</li>
+<li>taking risks in activities, often with little or no regard for personal safety or the safety of others</li>
+</ul>
+<p>As with ADHD in children and teenagers, ADHD in adults can appear alongside many related problems or conditions. One of the most common conditions is depression. Other conditions that adults may have alongside ADHD include:</p>
+<ul>
+<li>personality disorders</li>
+<li>bipolar disorder, a condition that affects your moods, which can swing from one extreme to another</li>
+<li>obsessive-compulsive disorder, a condition that causes obsessive thoughts and compulsive behaviour, such as cleaning constantly</li>
+</ul>
+<p>Any problems you may have had as a child are likely to persist into adulthood, which can make life extremely difficult. For example, you may have problems:</p>
+<ul>
+<li>finding and keeping employment</li>
+<li>in relationships and social interactions</li>
+<li>with drugs</li>
+<li>with crime</li>
+</ul>
+<p><em>Information taken from <a title="NHS UK | Symptoms of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Symptoms.aspx" target="_blank">nhs.uk</a>.</em></p>	
+    </div><!-- /content -->
+</div><!-- /about adhd page -->
+
+<!-- Start of Characteristics adhd page -->
+<div data-role="page" id="adhdchars">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-rel="back" data-icon="back">Back</a> 
+	<h1>Characteristics</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p>The characteristics of ADHD come in 3 primary categories:</p>
+<ul>
+<li>Inattentiveness</li>
+<li>Hyperactivity</li>
+<li>Impulsivity</li>
+</ul>
+<p>These characteristics are present in both children and adults affected by ADHD.</p>
+<p>Under these categories comes a multitude of sub symptoms. Here is just a handful of symptoms recognised in those with ADHD.</p>
+<h3>Inattentiveness</h3>
+<ul>
+<li>May have difficulty finishing work/projects.</li>
+<li>May come across as not listening.</li>
+<li>May have problems following instructions.</li>
+<li>May be easily distracted.</li>
+<li>May suffer from a short attention span.</li>
+<li>May have difficulty to concentrate on tasks.</li>
+<li>May be Disorganised.</li>
+<li>Written work may look messy and incoherent.</li>
+<li>May forget to bring the correct equipment/resources.</li>
+<li>May loose things or forget where things were left.</li>
+<li>May forget things quickly.</li>
+<li>May seem oblivious to their surroundings (In a Daydream state)</li>
+<li>Work is handed in late or not at all(home work/coursework/projects ect&#8230;)</li>
+<li>May put off starting new tasks.</li>
+<li>May make careless mistakes.</li>
+</ul>
+<h3>Impulsivity</h3>
+<ul>
+<li>May jump from one activity to another, may not finish individual activities.</li>
+<li>Acts or speaks without thinking.</li>
+<li>May call out or answer questions before they are finished.</li>
+<li>May be Clumsy/accident prone, breaks things, accidentally hurts others.</li>
+<li>May find it difficult to sit and listen to a story.</li>
+<li>May make inappropriate remarks in social situations.</li>
+</ul>
+<h3>Hyperactivity</h3>
+<ul>
+<li>May be continuously on the go.</li>
+<li>May throw tantrums or become agitated easily.</li>
+<li>May find it difficult to sit or stay in one place.</li>
+<li>May demand attention without realising.</li>
+<li>May fidget, fiddle, squirm, tap, poke or kick.</li>
+<li>May be extremely talkative or noisy about a topic of interest to them.</li>
+</ul>
+<h3>Shared Characteristics</h3>
+<ul>
+<li>May seem unable to learn the difference between appropriate and inappropriatebehaviour.</li>
+<li>May be negative about themselves and have low self-esteem.</li>
+<li>May not believe they can complete something before trying.</li>
+<li>May go through phases of restarting work/projects/tasks if they feel it is not good enough even though it may be of high quality.</li>
+<li>May show signs of making little progress.</li>
+<li>May underachieve when writing things down but may show exceptional skills in vocalising knowledge.</li>
+<li>May come across as the class clown to avoid work due to a fear of failure.</li>
+<li>May avoid eye contact</li>
+<li>May work better on a one 2 one basis.</li>
+<li>Can come across as immature in comparison to their peers</li>
+<li>May have few friends</li>
+<li>May push boundaries to test rules and structures.</li>
+</ul>
+<blockquote><p>(REF: Children with Attention Difficulties &#8211; A Guide for Teachers. Jack Crompton)</p></blockquote>	
+    </div><!-- /content -->
+</div><!-- /Characteristics adhd page -->
+
+<!-- Start of diagadhd page -->
+<div data-role="page" id="diagadhd">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-rel="back" data-icon="back">Back</a> 
+	<h1>Diagnosing ADHD</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p><strong>There is no simple test to determine whether you or your child has attention deficit hyperactivity disorder (ADHD). If you think that you or your child may have ADHD, see your GP.</strong></p>
+<h3><strong></strong>Visiting your GP</h3>
+<p>Your GP will ask:</p>
+<ul>
+<li>about your symptoms and those of your child</li>
+<li>when these symptoms started</li>
+<li>where the symptoms occur, for example at home or in school</li>
+<li>how the symptoms affect your (or your child’s) quality of life</li>
+<li>if there have been any recent changes, for example a death or divorce in the family</li>
+<li>if there is a family history of ADHD</li>
+<li>any other problems, or symptoms of different health conditions</li>
+</ul>
+<h4>Functional impairment</h4>
+<p>Your GP will want to know if these symptoms are causing functional impairment. This means whether they are affecting day-to-day life. For example, a child may have functional impairment if:</p>
+<ul>
+<li>they are unable to make or keep friends</li>
+<li>they are unable to wash or feed themselves</li>
+</ul>
+<h4>Assessing children</h4>
+<p>If you are a parent whose child may have ADHD, you may be offered parent training or an education programme to teach you to use behavioural techniques to help your child.</p>
+<p>Alternatively, if your child’s symptoms are causing severe functional impairment, your GP will refer your child to another healthcare professional who will be able to diagnose ADHD.</p>
+<h4>Assessing adults</h4>
+<p>For adults with ADHD symptoms, your GP will assess your symptoms and may refer you to a specialist if:</p>
+<ul>
+<li>you were not diagnosed with ADHD as a child, but your symptoms began during childhood and have been ongoing since then</li>
+<li>your symptoms are not caused by another mental health condition</li>
+<li>your symptoms are causing moderate or severe functional impairment; for example, you are underachieving at work or find intimate relationships difficult</li>
+</ul>
+<p>You may also be referred to a specialist if you had ADHD as a child or young person and your symptoms are now causing moderate or severe functional impairment.</p>
+<h3><strong>Referral</strong></h3>
+<p>If your GP suspects that you or your child has ADHD, they may refer you to a specialist such as:</p>
+<ul>
+<li>a child or adult psychiatrist (an expert in mental and emotional health)</li>
+<li>a paediatrician (an expert in children&#8217;s health)</li>
+<li>the mental health services for children and young people</li>
+</ul>
+<p>Who you are referred to will depend on your age and what is available in your local area.</p>
+<p>Your specialist can make an accurate diagnosis after a detailed assessment that may include:</p>
+<ul>
+<li><strong>a physical examination</strong>, which will rule out other possible causes for the symptoms</li>
+<li><strong>a series of interviews</strong> with you or your child</li>
+<li><strong>interviews or reports</strong> from other significant people, such as partners, parents and teachers</li>
+</ul>
+<h3><strong>Diagnosis in children and teenagers</strong></h3>
+<p>Diagnosing ADHD in children depends on a set of strict criteria. To be diagnosed with ADHD, your child must have six or more symptoms of inattentiveness, or six or more symptoms of hyperactivity and impulsiveness.</p>
+<p>The type of ADHD your child will be diagnosed with will depend on the number of symptoms they have from each group. For example, if they have eight symptoms of hyperactivity and impulsiveness and only three symptoms of inattentiveness, they will be diagnosed with ADHD mainly hyperactive-impulsive.</p>
+<p>To be diagnosed with ADHD, your child must also have:</p>
+<ul>
+<li><strong>been displaying symptoms continuously</strong> for at least six months</li>
+<li><strong>started to show symptoms before the age of seven</strong> – although in some cases a diagnosis can still be made if symptoms do not start until after this age</li>
+<li><strong>been showing symptoms in at least two different settings</strong> – for example, at home and at school, to rule out the possibility that the behaviour is just a reaction to certain teachers or parental control</li>
+<li><strong>symptoms that make their lives considerably more difficult</strong>, on a social, academic or occupational level</li>
+<li><strong>symptoms that are not just part of a developmental disorder</strong> or difficult phase, and are not better accounted for by another condition</li>
+</ul>
+<h3><strong>Diagnosis in adults</strong></h3>
+<p>Diagnosing ADHD in adults is more difficult because there is no definitive list of symptoms that can be applied to an adult who may have the condition.</p>
+<p>If your GP refers you to a specialist, they will ask about your present symptoms. However, under current diagnostic guidelines, a diagnosis of adult ADHD cannot be confirmed unless your symptoms have been present from childhood.</p>
+<p>To help your specialist decide on your diagnosis, they may ask about your childhood and whether your symptoms were present then. If you find it difficult to remember, or you were not diagnosed with childhood ADHD, your specialist may wish to see your old school records or talk to your parents, teachers or anyone else who knew you well when you were a child.</p>
+<p>For an adult to be diagnosed with ADHD, their symptoms should cause a moderate degree of impairment in different areas of their life. Examples of impairment could be:</p>
+<ul>
+<li>underachieving at work or in education</li>
+<li>driving dangerously</li>
+<li>difficulty carrying out daily activities, such as shopping</li>
+<li>difficultly making or keeping friends</li>
+<li>difficulty in relationships with partners</li>
+</ul>
+<p>If your problems are recent and did not occur regularly in the past, you are not considered as having adult ADHD.</p>
+<p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Diagnosis.aspx" target="_blank">nhs.uk</a>.</em></span></p>	
+    </div><!-- /content -->
+</div><!-- /Characteristics adhd page -->
+
+<!-- Start of causes adhd page -->
+<div data-role="page" id="causeadhd">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-rel="back" data-icon="back">Back</a> 
+	<h1>What causes ADHD</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p><strong>The exact cause of attention deficit hyperactivity disorder (ADHD) is not fully understood. It is thought ADHD is caused by a mix of genetic (inherited) and environmental factors.</strong></p>
+<h3><strong>GENETICS</strong></h3>
+<p>ADHD tends to run in families and, in most cases, it is thought inheriting the condition is the most likely cause. Research shows that both parents and siblings of a child with ADHD are four to five times more likely to have ADHD themselves.</p>
+<h3><strong>BRAIN FUNCTION AND ANATOMY</strong></h3>
+<p>Research shows that the way the brain works in people with ADHD differs from that of people who do not have the condition. It is thought chemicals in the brain that carry messages, known as neurotransmitters, do not work properly in people with ADHD. Also, people with the condition seem to display less activity in the parts of their brains that control activity and attention.</p>
+<p>Some research shows that the frontal lobes,  the part of the brain that controls decision-making, do not work as they should in people with ADHD. Other research indicates they may have imbalances in the levels of certain chemicals, such as noradrenaline and dopamine.</p>
+<h3><strong>EXPOSURE TO TOXINS DURING PREGNANCY</strong></h3>
+<p>Women who drink alcohol when pregnant are more likely to have a child with ADHD. It is also thought that smoking and drug abuse can also increase the risks of ADHD in an unborn child.</p>
+<h3><strong>BEING MALE</strong></h3>
+<p>Boys are more commonly diagnosed with childhood ADHD than girls, and more men are diagnosed with the condition than women. Research suggests this could be because diagnosis tends to pinpoint loud, disruptive behaviour, which is more noticeable and more common in males than in females.</p>
+<p>It could also be that ADHD is missed in girls because they tend to have the form of the condition defined by inattentiveness (ADHD mainly inattentive, or attention deficit disorder).</p>
+<h3><strong>OTHER CAUSES</strong></h3>
+<p>Other possible causes of ADHD include:</p>
+<ul>
+<li>being born prematurely (before week 37 of the pregnancy)</li>
+<li>having a low birth weight</li>
+<li>brain damage either in the womb or in the first few years of life</li>
+</ul>
+<p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Causes.aspx" target="_blank">nhs.uk</a>.</em></span></p>	
+    </div><!-- /content -->
+</div><!-- /Characteristics adhd page -->
+
+<!-- Start of Treating adhd page -->
+<div data-role="page" id="treatadhd">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-rel="back" data-icon="back">Back</a> 
+	<h1>Treating ADHD</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p><strong>There is no cure for attention deficit hyperactivity disorder (ADHD), but treatment can alleviate your symptoms and make the condition much less of a problem in day-to-day life. ADHD can be treated using medication or therapy, but it is widely agreed a combination of both is the best way to treat it.</strong></p>
+<p>Treatment will usually be arranged by a specialist, such as a paediatrician or psychiatrist (an expert in mental and emotional health), although your condition may be monitored by your GP.</p>
+<h3>Medication</h3>
+<p>There are three types of medication for ADHD:</p>
+<ul>
+<li>methylphenidate</li>
+<li>dexamfetamine</li>
+<li>atomoxetine</li>
+</ul>
+<p>Medications for ADHD are not a permanent cure. Methylphenidate and dexamfetamine based medications give a period of treatment during each day (between 4-12 hours depending on the preparation). Atomoxetine usually gives a longer period of treatment.</p>
+<p>Medications help someone who has ADHD to:</p>
+<ul>
+<li>concentrate better</li>
+<li>be less impulsive</li>
+<li>feel calmer</li>
+<li>learn and practise new skills</li>
+</ul>
+<p>In the UK, all three of these medications are licensed for use in children and teenagers. Atomoxetine is licensed for use in adults who were diagnosed with ADHD as children. However, there are no medications currently licensed for treating newly diagnosed adults, or for use specifically in adults.</p>
+<p>If you have been diagnosed with adult ADHD, your GP and specialist can discuss which medications and therapies may be suitable for you.</p>
+<p>Methylphenidate and dexamfetamine are controlled drugs, which means their availability and use are more closely controlled than other prescription medicines. With all ADHD medications, if you or your child is prescribed one of these treatments, you will probably be given small dosages at first, which may then be gradually increased.</p>
+<p>Medication is most effective if used every day. Treatment breaks are not normally recommended apart from in specific situations.</p>
+<p>You or your child will need to see your GP for regular check-ups to ensure the treatment is working effectively. Your specialist will discuss how long you should take your treatment. Generally, children with ADHD will need to continue treatment at least until after GCSE examinations.</p>
+<h4>Methylphenidate</h4>
+<p>Methylphenidate comes in a number of different brands and is the most commonly used medication for ADHD. Methylphenidate is known as a psychostimulant or central nervous system (CNS) stimulant. It is not completely clear how it works, but it is thought it stimulates a part of the brain that changes mental and behavioural reactions.</p>
+<p>Methylphenidate can be used by teenagers and children with ADHD over the age of six years. Although methylphenidate is not licensed for use in adults, it may be taken under close supervision from your GP and specialist.</p>
+<p>Methylphenidate cannot be taken:</p>
+<ul>
+<li>by women who are pregnant or breastfeeding</li>
+<li>if you or your child has glaucoma (an eye condition that affects vision)</li>
+<li>if you or your child has severe depression</li>
+</ul>
+<p>Methylphenidate should be used with caution:</p>
+<ul>
+<li>if you or your child has a tic (a repeated involuntary movement or sound)</li>
+<li>if you or your child has Tourette&#8217;s syndrome (a condition that causes involuntary movements or sounds)</li>
+<li>if you or your child has epilepsy (a condition that causes fits) &#8211; if the frequency of the fits increases the medicine may need to be stopped</li>
+</ul>
+<p>Methylphenidate can be taken as either immediate-release tablets (small doses taken two to three times a day), or as modified-release tablets (taken once a day in the morning, and they release the dose throughout the day) as this will cover the whole school day or last into the evening. Modified-release capsules can be opened and sprinkled on food so are suitable for young children who may not be able to swallow tablets.</p>
+<p>Methylphenidate can cause side effects, which may include:</p>
+<ul>
+<li>a small increase in blood pressure and heart rate</li>
+<li>loss of appetite, which can lead to weight loss (if your child is prescribed methylphenidate, your GP will monitor their weight to ensure they are growing properly)</li>
+<li>trouble sleeping</li>
+<li>headaches</li>
+<li>stomach aches</li>
+<li>mood swings</li>
+</ul>
+<p>There are ways to ease these side effects. For example, loss of appetite may be avoided by taking the medication with a meal or snack. Teenagers and adults should avoid drinking alcohol during treatment because this can make side effects worse.</p>
+<h4>Dexamfetamine</h4>
+<p>Dexamfetamine works in the same way as methylphenidate. It is also classed as a psychostimulant or CNS stimulant, and may be particularly effective in controlling hyperactivity.</p>
+<p>Dexamfetamine can be used by teenagers and children with ADHD who are over three. Although it is not licensed for use in adults, it may be taken under close supervision from your GP and specialist.</p>
+<p>Dexamfetamine cannot be taken:</p>
+<ul>
+<li>by women who are pregnant or breastfeeding</li>
+<li>if you have cardiovascular disease (a condition that affects the heart or blood vessels), such as moderate to severe high blood pressure (hypertension)</li>
+<li>if you have an overactive thyroid (hyperthyroidism)</li>
+</ul>
+<p>Dexamfetamine should be used with caution if you or your child has epilepsy.</p>
+<p>Dexamfetamine is usually taken as a daily tablet once or twice a day and may have side effects similar to those of methylphenidate.</p>
+<h4>Atomoxetine</h4>
+<p>Atomoxetine works differently from methylphenidate and dexamfetamine.</p>
+<p>Atomoxetine is known as a selective noradrenaline uptake inhibitor (it increases the amount of a chemical in the brain called noradrenaline). This chemical passes messages between brain cells, so by increasing the amount the atomoxetine aids concentration and helps control impulses.</p>
+<p>Atomoxetine can be used by teenagers and children over six. It is also licensed for use in adults who are continuing treatment after taking the medication as a teenager. It is not licensed for use in adults newly diagnosed with ADHD, but your GP and specialist may prescribe it under their supervision.</p>
+<p>Atomoxetine cannot be taken:</p>
+<ul>
+<li>by women who are pregnant or breastfeeding</li>
+<li>if you or your child has glaucoma</li>
+</ul>
+<p>Like other medications, the use of atomoxetine must be closely monitored by your GP and specialist.</p>
+<p>Some studies have shown a small number of children and young people who take atomoxetine are more likely to think about suicide. If either you or your child begin to feel depressed or suicidal while taking this medication, see your GP to ask about switching to a different medication.</p>
+<p>Also, in rare cases, there is evidence that atomoxetine can cause liver damage. Arrange to see your GP regularly if you or your child is taking this medication.</p>
+<p>Atomoxetine comes in capsule form you or your child takes once or twice a day. Capsules are long-acting, so your child will not need to take them at school. It may be prescribed as an alternative to methylphenidate or dexamfetamine if these are ineffective or cause adverse effects.</p>
+<p>Atomoxetine can cause side effects, which may include:</p>
+<ul>
+<li>a small increase in blood pressure and heart rate</li>
+<li>nausea (feeling sick)</li>
+<li>waking early in the morning</li>
+<li>dizziness</li>
+<li>stomach aches</li>
+<li>irritability</li>
+</ul>
+<p>If you or your child needs medication for ADHD, your GP and specialist will take several factors into account before recommending a treatment.</p>
+<p>These will include:</p>
+<ul>
+<li>any other conditions you or your child may have</li>
+<li>side effects of each treatment</li>
+<li>whether or not dosage times interfere with school or work</li>
+</ul>
+<h3>Therapy</h3>
+<p>As well as taking medication, different therapies can be useful in treating ADHD in children, teenagers and adults. Therapy is also effective in treating additional problems, such as conduct or anxiety disorders, that may appear with ADHD.</p>
+<p>Therapies outlined below can be carried out with the help of a number of healthcare professionals, including:</p>
+<ul>
+<li><strong>counsellors</strong> – experts trained to provide talking therapies that aim to help people cope better with their life and mental health condition</li>
+<li><strong>psychiatrists</strong> – qualified medical doctors who have done further training in treating mental health conditions</li>
+<li><strong>psychologists</strong> – healthcare professionals who specialise in the assessment and treatment of mental health conditions</li>
+<li><strong>social workers</strong> – experts often used to bridge the gap between mental health services and the wider social service provision, and provide advice on a variety of practical issues</li>
+</ul>
+<h4>Psychotherapy</h4>
+<p>Psychotherapy is a type of talking therapy, which means you or your child will be encouraged to discuss ADHD and how it affects you. It can help children, teenagers and adults make sense of being diagnosed with ADHD, and can help you to cope and live with the condition.</p>
+<h4>Behaviour therapy</h4>
+<p>Behaviour therapy provides support for carers of children with ADHD, and may involve teachers as well as parents. Behaviour therapy usually involves behaviour management, which uses a system of rewards and penalties to encourage your child to try and control their ADHD.</p>
+<p>If your child has ADHD, you can identify types of behaviour you want to encourage, such as sitting at the table to eat. Your child is then given some sort of small reward for good behaviour, and a small penalty for poor behaviour. For teachers, behaviour management involves learning how to plan and structure activities and to praise and encourage children for even very small amounts of progress.</p>
+<h4>Parent training and education programmes</h4>
+<p>If your child has ADHD, parent training and education programmes can help you learn specific ways of talking to your child and playing and working with them to improve their attention and behaviour. You may also be offered parent training before your child is officially diagnosed with ADHD.</p>
+<p>These programmes are usually arranged in groups and can last several weeks. They aim to teach parents and carers about behaviour management (see above), while increasing your confidence in your ability to look after your child and improving the relationship between you and your child.</p>
+<h4>Social skills training</h4>
+<p>Social skills training involves your child taking part in role-play situations, and aims to teach them how to behave in social situations by learning how their behaviour affects others.</p>
+<h4>Cognitive behavioural therapy (CBT)</h4>
+<p>Cognitive behavioural therapy (CBT) is an alternative form of therapy based on the idea that your problems are often created by you. It is not the situation itself that is causing problems, but how you think about it and how you react to it. A CBT therapist would try and change how your child feels about a situation, which would in turn change their behaviour.</p>
+<h3>Other methods of treatment</h3>
+<p>There are other ways of treating ADHD that some people with the condition find helpful, such as cutting out certain foods and taking supplements. However, there is no medical evidence these methods work, and they should not be attempted without medical advice.</p>
+<h4>Diet</h4>
+<p>People with ADHD should eat a healthy balanced diet. Do not cut out foods without medical advice.</p>
+<p>Some people may notice a link between types of food and worsening ADHD symptoms. For example, sugar and caffeine are often blamed for aggravating hyperactivity, and some people feel they have intolerances to wheat or dairy products that may add to their symptoms.</p>
+<p>If this is the case, keep a diary of what you eat and drink and what behaviour this causes. Discuss this with your GP, who may refer you to a dietitian (a healthcare professional who specialises in nutrition).</p>
+<p>However, do not change your (or your child&#8217;s) diet without medical advice.</p>
+<h4>Supplements</h4>
+<p>Some people consider certain supplements, such as omega 3 fatty acid, to be beneficial in people with ADHD. However, there is no medical evidence to support this. If you do wish to try using a supplement, talk to your GP first, as some can react unpredictably with other medication or make it less effective.</p>
+<p>Also remember that supplements should not be taken long-term, as they can build up to dangerous levels in your body.</p>
+<h4>Exercise</h4>
+<p>People with ADHD should take regular exercise.</p>
+<p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Treatment.aspx" target="_blank">nhs.uk</a>.</em></span></p>	
+    </div><!-- /content -->
+</div><!-- /Characteristics adhd page -->
+
+<!-- Start of Living with ADHD adhd page -->
+<div data-role="page" id="liveadhd">
+<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#" data-rel="back" data-icon="back">Back</a> 
+	<h1>Living with ADHD</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p><strong>Living with a child who has attention deficit hyperactivity disorder (ADHD) can be draining. The impulsive, fearless and chaotic behaviours typical of ADHD can make normal everyday activities exhausting and stressful.</strong></p>
+<p>There are many areas that bring about their own issues when your child has ADHD, including:</p>
+<ul>
+<li>getting your child to sleep at night</li>
+<li>arriving at school on time</li>
+<li>listening to and carrying out instructions</li>
+<li>social occasions</li>
+<li>shopping</li>
+</ul>
+<h3>Ways to cope</h3>
+<p>It is difficult when things are going wrong, but it is important to remember a child with ADHD cannot help their behaviour. People with ADHD find it difficult to suppress impulses, which means they do not stop to consider a situation or the consequences before they act.</p>
+<h4>Plan the day</h4>
+<p>Plan the day so your child knows what to expect. Set routines can make a difference to how a child with ADHD copes with everyday life. If your child has to get ready for school, for example, break it down into structured steps so they know what the daily chores are.</p>
+<h4>Set clear boundaries</h4>
+<p>Make sure everyone knows what behaviour is expected and reinforce positive behaviour with immediate praise or rewards. Be clear, using enforceable consequences if boundaries are overstepped (such as taking away a privilege) and follow these through consistently.</p>
+<h4>Be positive</h4>
+<p>Give specific praise. Instead of saying a general, &#8220;Thanks for doing that,&#8221; you could say, &#8220;You washed the dishes really well. Thank you.&#8221; Your child will know you are pleased, and why.</p>
+<h4>Giving instructions</h4>
+<p>If you are asking your child to do something, give brief instructions and be specific. Instead of asking, &#8220;Can you tidy your bedroom?&#8221; say, &#8220;Please put the Lego into the box and put the books back onto the shelf.&#8221; This allows your child to achieve and creates opportunities for praise when they get it right.</p>
+<h4>Incentive scheme</h4>
+<p>Set up your own incentive scheme using a points chart or star chart so good behaviour can earn a privilege. For example, behaving well on a shopping trip will earn your child time on the computer or a game of something. Involve your child in it and allow them to help decide what the privileges will be.</p>
+<p>These charts need regular changes or they become boring. Targets should be:</p>
+<ul>
+<li>immediate (for example, daily)</li>
+<li>intermediate (for example, weekly)</li>
+<li>long-term (for example, three-monthly)</li>
+</ul>
+<p>Try to focus on just one or two behaviours at once.</p>
+<h4>Intervene early</h4>
+<p>Watch for warning signs. If your child looks like they are becoming frustrated, overstimulated and about to lose self-control, intervene. Distract your child if possible, by taking them away from the situation, which may calm your child down.</p>
+<h4>Social situations</h4>
+<p>Keep social situations short and sweet. Invite friends to play, but keep playtimes short so your child does not lose self-control. Do not aim to do this when your child is feeling low (for example, when they are feeling tired or hungry after a day at school).</p>
+<h4>Exercise</h4>
+<p>Make sure your child gets lots of physical activity during the day. Walking, skipping and playing sport can help your child wear themselves out and improve their quality of sleep. Make sure they are not doing anything too strenuous or exciting near to bedtime.</p>
+<h4>Eating</h4>
+<p>Keep an eye on what your child eats. If your child is hyperactive after eating certain foods, which may contain additives or caffeine, keep a diary of these and discuss with your GP.</p>
+<h4>Bedtime</h4>
+<p>Stick to a routine. Make sure your child goes to bed at the same time each night and gets up at the same time in the morning. Avoid overstimulating activities in the hours before bedtime, such as computer games or watching TV.</p>
+<h4>Night time</h4>
+<p>Sleep problems and ADHD can be a vicious circle. ADHD can lead to sleep problems, which in turn can make ADHD symptoms worse. Many children with ADHD will repeatedly get up after being put to bed and have interrupted sleep patterns. Trying a sleep-friendly routine can help your child and make bedtime less of a battleground.</p>
+<p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/LivingwithADHDpage.aspx" target="_blank">nhs.uk</a>.</em></span></p>	
+    </div><!-- /content -->
+</div><!-- /Characteristics adhd page -->
     </body>
 </html>
