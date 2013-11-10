@@ -6,6 +6,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
           <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <style type="text/css">
+<!--Custom Icons-->
+
+<!--Header-->
+.header-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
+.header-custom .ui-btn-icon-notext .ui-btn-inner { padding-top: 3px !important; }
+		.header-custom .ui-btn .ui-icon { width: 30px!important; margin-left: 9px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		.header-custom .ui-btn-icon-notext {width: 50px;height: 30px;}
+		#info .ui-icon { background:  url("img/cust-icon/724-info-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px; }
+		#list .ui-icon { background:  url("img/cust-icon/1100-list-2-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px;  }
+		#login .ui-icon { background:  url(glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+		#beer .ui-icon { background:  url(glyphish-icons/88-beermug.png) 50% 50% no-repeat;  background-size: 22px 27px; }
+		#coffee .ui-icon { background:  url(glyphish-icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+		#skull .ui-icon { background:  url(glyphish-icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+		
+<!--Buttons-->
+.button-grid-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
+		.button-grid-custom .ui-btn .ui-icon { width: 60px!important; height:60px!important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		.button-grid-custom .ui-btn-icon-notext {width: 65px;height: 65px;}
+		.button-grid-custom .ui-btn-icon-notext .ui-btn-inner .ui-icon{margin-left: 7px;margin-bottom: 2px;margin-right: 2px;margin-top: 6px;}
+#myfb .ui-icon { background:  url("img/cust-icon/485-facebook@2x.png") no-repeat;}
+#mytwit .ui-icon { background:  url("img/cust-icon/498-twitter@2x.png") no-repeat; }
+#mymail .ui-icon { background:  url("img/cust-icon/730-envelope-selected@2x.png") no-repeat; margin-left: 5px;
+margin-bottom: 2px;
+margin-right: 2px;
+margin-top: 11px;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+#myfb .ui-icon {background-image: url("img/cust-icon/485-facebook@2x.png")50% 50% no-repeat;background-size: 50px 50px;}
+}
+
+</style>
         <link rel="stylesheet" href="css/MyADDventure.min.css" />
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
 <script type="text/javascript" src="phonegap.js"></script>
@@ -16,26 +48,26 @@ $( document ).bind( "mobileinit", function(){
 });
 </script>
 <script src="js/jquery.mobile-1.3.2.min.js"></script>
-        <title>My ADDventure</title>
+        <title>My ADHDApp</title>
+        
     </head>
-    <body>
+    <body data-theme="a">
         <!-- Start of home page -->
         <div data-role="page" id="home">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-left">Menu</a>
-	<h1>My ADDventure</h1>
-	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
+	<h1>My ADHDApp</h1>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
-    <div class="ui-grid-solo">
-	<div class="ui-block-a" align="center"><img src="img/MyADDventure-Logo-small-190.png"/></div>	   
-</div>
-<div class="ui-grid-solo">
-	<div class="ui-block-a" align="center">Welcome to the My ADDventure ADHD APP.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available from My ADDventure and much more.</div>
-</div>
-		<p></p>		
-		
+	<p align="center"><img class="logo" src="img/MyADHDAPP_logo-small2.png"/></p>	   
+	<p align="center">Welcome to MyADHDApp.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available from My ADDventure and much more.</p>	
+		<div class="ui-grid-b button-grid-custom" align="center">
+	<div class="ui-block-a">Facebook<a href="fb://facebook.com/MyADDventure" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
+	<div class="ui-block-b">Twitter<a href="twitter://user?screen_name=MyADDventure" data-role="button" id="mytwit" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
+	<div class="ui-block-c">Email Us<a href="index.html" data-role="button" id="mymail" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
+</div><!-- /grid-b -->
 	</div><!-- /content -->
 
       <!-- menu panel  -->
@@ -59,7 +91,8 @@ $( document ).bind( "mobileinit", function(){
 	<h1>About this App</h1>
 	</div><!-- /header -->
 	<div data-role="content">	
-	  <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
+	  <p><strong>App Name:</strong><br>
+	  <em>My ADHD App</em></p>
       <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Company:</strong><br><em>My ADDventure</em></p>
       <p><strong>Contact:</strong><br><em>app@myaddventure.org.uk</em></p>
@@ -636,5 +669,36 @@ $( document ).bind( "mobileinit", function(){
 <p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/LivingwithADHDpage.aspx" target="_blank">nhs.uk</a>.</em></span></p>	
     </div><!-- /content -->
 </div><!-- /Characteristics adhd page -->
+
+<!-- Start of adhd page -->
+<div data-role="page" id="contact">
+
+	<div data-theme="a" data-role="header" data-position="fixed">
+<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-left">Menu</a>
+	<h1>Contacts</h1>
+	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div class="ui-grid-b">
+	<div class="ui-block-a">Block A</div>
+	<div class="ui-block-b">Block B</div>
+	<div class="ui-block-c">Block C</div>
+</div><!-- /grid-b -->
+	</div><!-- /content -->
+
+          <!-- menu panel  -->
+  <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
+    <div class="panel-content">
+      <h3>Menu</h3>
+     <ul data-role="listview">
+			<li><a href="#home" data-transition="slidedown">Home</a></li>
+			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
+			<li><a href="#links" data-transition="slidedown">Links</a></li>
+            <li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
+		</ul>
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /menu panel -->
+</div><!-- /adhd page -->
     </body>
 </html>
