@@ -6,10 +6,10 @@
         id        = "com.MyADDventure.ADHDAPP"
         version   = "1.0.0">
 
-    <name>My ADDventure</name>
+    <name>My ADHDApp</name>
 
     <description>
-        My ADDventure APP
+        The first ADHD app with all the information you could ever want right at your fingertips. No need to be connected to the internet to get the information that you need.
     </description>
 
     <author href="http://www.myaddventure.org.uk" email="app@myaddventure.org.uk">
