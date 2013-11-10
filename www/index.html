@@ -16,7 +16,7 @@
 		.header-custom .ui-btn-icon-notext {width: 50px;height: 30px;}
 		#info .ui-icon { background:  url("img/cust-icon/724-info-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px; }
 		#list .ui-icon { background:  url("img/cust-icon/1100-list-2-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px;  }
-		#login .ui-icon { background:  url(glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+		#back .ui-icon { background:  url("img/cust-icon/1026-revert-selected@2x.png") 50% 50% no-repeat;  background-size: 18px 18px; }
 		#beer .ui-icon { background:  url(glyphish-icons/88-beermug.png) 50% 50% no-repeat;  background-size: 22px 27px; }
 		#coffee .ui-icon { background:  url(glyphish-icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
 		#skull .ui-icon { background:  url(glyphish-icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
@@ -104,10 +104,10 @@ $( document ).bind( "mobileinit", function(){
 <!-- Start of adhd page -->
 <div data-role="page" id="adhd">
 
-	<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-left">Menu</a>
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
 	<h1>ADHD</h1>
-	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
@@ -130,7 +130,7 @@ $( document ).bind( "mobileinit", function(){
 			<li><a href="#home" data-transition="slidedown">Home</a></li>
 			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
 			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
-            <li><a href="#contact" data-transition="slidedown">Contact Us</a></li>
+            <li><a href="#contact" data-transition="slidedown">Useful Contacts</a></li>
 		</ul>
     </div><!-- /content wrapper for padding -->
   </div><!-- /menu panel -->
@@ -138,8 +138,8 @@ $( document ).bind( "mobileinit", function(){
 
 <!-- Start of about adhd page -->
 <div data-role="page" id="aboutadhd">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-rel="back" data-icon="back">Back</a> 
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>About ADHD</h1>
 	</div><!-- /header -->
 	<div data-role="content">	
@@ -186,8 +186,8 @@ $( document ).bind( "mobileinit", function(){
 
 <!-- Start of symptoms adhd page -->
 <div data-role="page" id="adhdsymtoms">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-rel="back" data-icon="back">Back</a> 
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>ADHD Symptoms</h1>
 	</div><!-- /header -->
 	<div data-role="content">
@@ -382,8 +382,8 @@ $( document ).bind( "mobileinit", function(){
 
 <!-- Start of diagadhd page -->
 <div data-role="page" id="diagadhd">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-rel="back" data-icon="back">Back</a> 
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>Diagnosing ADHD</h1>
 	</div><!-- /header -->
 	<div data-role="content">
@@ -460,8 +460,8 @@ $( document ).bind( "mobileinit", function(){
 
 <!-- Start of causes adhd page -->
 <div data-role="page" id="causeadhd">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-rel="back" data-icon="back">Back</a> 
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>What causes ADHD</h1>
 	</div><!-- /header -->
 	<div data-role="content">
@@ -489,8 +489,8 @@ $( document ).bind( "mobileinit", function(){
 
 <!-- Start of Treating adhd page -->
 <div data-role="page" id="treatadhd">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-rel="back" data-icon="back">Back</a> 
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>Treating ADHD</h1>
 	</div><!-- /header -->
 	<div data-role="content">
@@ -621,8 +621,8 @@ $( document ).bind( "mobileinit", function(){
 
 <!-- Start of Living with ADHD adhd page -->
 <div data-role="page" id="liveadhd">
-<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#" data-rel="back" data-icon="back">Back</a> 
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>Living with ADHD</h1>
 	</div><!-- /header -->
 	<div data-role="content">
@@ -670,35 +670,5 @@ $( document ).bind( "mobileinit", function(){
     </div><!-- /content -->
 </div><!-- /Characteristics adhd page -->
 
-<!-- Start of adhd page -->
-<div data-role="page" id="contact">
-
-	<div data-theme="a" data-role="header" data-position="fixed">
-<a href="#menupanel" data-icon="grid" data-theme="a" class="ui-btn-left">Menu</a>
-	<h1>Contacts</h1>
-	<a href="#about" data-icon="bars" data-theme="a" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
-	</div><!-- /header -->
-
-	<div data-role="content">	
-		<div class="ui-grid-b">
-	<div class="ui-block-a">Block A</div>
-	<div class="ui-block-b">Block B</div>
-	<div class="ui-block-c">Block C</div>
-</div><!-- /grid-b -->
-	</div><!-- /content -->
-
-          <!-- menu panel  -->
-  <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
-    <div class="panel-content">
-      <h3>Menu</h3>
-     <ul data-role="listview">
-			<li><a href="#home" data-transition="slidedown">Home</a></li>
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
-			<li><a href="#links" data-transition="slidedown">Links</a></li>
-            <li><a href="#resorces" data-transition="slidedown">Resorces</a></li>
-		</ul>
-    </div><!-- /content wrapper for padding -->
-  </div><!-- /menu panel -->
-</div><!-- /adhd page -->
     </body>
 </html>
