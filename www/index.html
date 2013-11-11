@@ -62,7 +62,7 @@
 <script src="js/jquery.js"></script>
 <script>
 
- document.addEventListener("deviceready", onDeviceReady, false);
+/* document.addEventListener("deviceready", onDeviceReady, false);*/
 
 $( document ).bind( "mobileinit", function(){
    $( ".selector" ).dialog( "close" );
@@ -72,7 +72,7 @@ $( document ).bind( "mobileinit", function(){
     function onDeviceReady() {
 		
 		var devicePlatform = device.platform;
-		if (devicePlatform == "iPhone"){
+		if (devicePlatform == "ios"){
 			$(".fbother").hide();
 			$(".fbios").show();
 		}
