@@ -61,9 +61,27 @@
 <script src="js/plugins/SocialSharing.js"></script>
 <script src="js/jquery.js"></script>
 <script>
+
+ document.addEventListener("deviceready", onDeviceReady, false);
+
 $( document ).bind( "mobileinit", function(){
    $( ".selector" ).dialog( "close" );
 });
+ // PhoneGap is ready
+    //
+    function onDeviceReady() {
+		
+		var devicePlatform = device.platform;
+		if (devicePlatform == "iPhone"){
+			$(".fbother").hide();
+			$(".fbios").show();
+		}
+		else
+		{
+			$(".fbother").show();
+			$(".fbios").hide();
+		}
+			    }
 </script>
 <script src="js/jquery.mobile-1.3.2.min.js"></script>
         <title>My ADHDApp</title>
@@ -82,9 +100,9 @@ $( document ).bind( "mobileinit", function(){
 	<p align="center"><img class="logo" src="img/MyADHDAPP_logo-small2.png"/></p>	   
 	<p align="center">Welcome to My ADHDApp.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available</p>	
 		<div class="ui-grid-b button-grid-custom" align="center">
-	<div class="ui-block-a"><strong>Facebook</strong><a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_system'); return false;" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
+	<div class="ui-block-a"><strong>Facebook</strong><a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_system'); return false;" data-role="button" id="myfb fbother" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a><a href="fb://page/621807314529067" onclick="window.open(this.href,'_system'); return false;" data-role="button" id="myfb fbios" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
 	<div class="ui-block-b"><strong>Twitter</strong><a href="http://twitter.com/MyADHDApp" onclick="window.open(this.href,'_system'); return false;" data-role="button" id="mytwit" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
-	<div class="ui-block-c"><strong>Share App</strong><a onclick="window.plugins.socialsharing.share('Check out this new app for ADHD - http://www.facebook.com/myadhdapp', null, null, 'http://www.myaddventure.org.uk')" id="myshare" data-icon="custom" data-iconpos="notext" data-theme="a" data-role="button">Share</a> </div>
+	<div class="ui-block-c"><strong>Share App</strong><a onclick="window.plugins.socialsharing.share('Check out this new app for ADHD -', null, null, 'http://www.myaddventure.org.uk')" id="myshare" data-icon="custom" data-iconpos="notext" data-theme="a" data-role="button">Share</a> </div>
 </div><!-- /grid-b -->
 	</div><!-- /content -->
 
@@ -709,6 +727,7 @@ $( document ).bind( "mobileinit", function(){
 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 <img src="img/addiss-face.jpg" style="width:auto;height:auto;max-width:100px;max-height:100px;vertical-align:middle;"/>
 	<p><strong>Name:</strong> ADDISS<p>
+    <p><strong>Location:</strong> National<p>
     <p><strong>Telephone:</strong> <a href="tel:020 8952 2800">020 8952 2800</a><p>
     <p><strong>Email:</strong> <a href="mailto:info@addiss.co.uk">info@addiss.org.uk</a><p>
     <p><strong>Description:</strong> ADDISS, The National Attention Deficit Disorder Information and Support Service. <br>
@@ -724,6 +743,7 @@ We provide people-friendly information and resources about Attention Deficit Hyp
 <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
 <img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:150px;max-height:100px;vertical-align:middle;"/>
 	<p><strong>Name:</strong> My ADDventure<p>
+    <p><strong>Location:</strong> Greater Manchester<p>
     <p><strong>Telephone:</strong> <a href="tel:0161 818 4523">0161 818 4523</a><p>
     <p><strong>Email:</strong> <a href="mailto:info@myaddventure.org.uk">info@myaddventure.org.uk</a><p>
     <p><strong>Description:</strong> My ADDventure is the Greater Manchester Charity for the support and awarness of ADHD in all affected.<p>
