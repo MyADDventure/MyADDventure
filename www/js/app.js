@@ -36,10 +36,8 @@ function myAppLogic()
 $( ".selector" ).dialog( "close" );
 $.mobile.buttonMarkup.hoverDelay = 100;
 var devicePlatform = device.platform;
-var element = document.getElementById('myos');
-        element.innerHTML = devicePlatform;
 		
-	if(device.platform == 'android' || device.platform == 'Android' || device.platform == 'WinCE' || device.platform == 'wince' || device.platform == 'Win32NT' || device.platform == 'win32nt')
+	if(devicePlatform == 'android' || devicePlatform == 'Android' || devicePlatform == 'WinCE' || devicePlatform == 'wince' || devicePlatform == 'Win32NT' || devicePlatform == 'win32nt')
 	{
 		var notios = true;
 	}
