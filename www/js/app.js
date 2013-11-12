@@ -37,4 +37,22 @@ $( ".selector" ).dialog( "close" );
 var devicePlatform = device.platform;
 var element = document.getElementById('myos');
         element.innerHTML = devicePlatform;
+		
+	if(device.platform == 'android' || device.platform == 'Android' || device.platform == 'WinCE' || device.platform == 'wince' || device.platform == 'Win32NT' || device.platform == 'win32nt')
+	{
+		var nottios = true;
+	}
+	else
+	{
+		var nottios = false;
+	}
+	
+	if(nottios)
+	{
+		$('.isioslink').remove();
+	}
+	else
+	{
+		$('.notioslink').remove();
+	}
 }
