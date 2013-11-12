@@ -51,9 +51,7 @@
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
-	<gap:plugin name="org.apache.cordova.device" />
-	<gap:plugin name="com.borismus.webintent" />
-	
+	<gap:plugin name="org.apache.cordova.device" />	
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
