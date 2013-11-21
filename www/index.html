@@ -1,52 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-          <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <style type="text/css">
-<!--Custom Icons-->
-
-<!--Header-->
-.header-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
-.header-custom .ui-btn-icon-notext .ui-btn-inner { padding-top: 3px !important; }
-		.header-custom .ui-btn .ui-icon { width: 30px!important; margin-left: 9px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
-		.header-custom .ui-btn-icon-notext {width: 50px;height: 30px;}
-		#info .ui-icon { background:  url("img/cust-icon/724-info-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px; }
-		#list .ui-icon { background:  url("img/cust-icon/1100-list-2-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px;  }
-		#back .ui-icon { background:  url("img/cust-icon/1026-revert-selected@2x.png") 50% 50% no-repeat;  background-size: 18px 18px; }
-		
-<!--Buttons-->
-.button-grid-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
-		.button-grid-custom .ui-btn .ui-icon { width: 60px!important; height:60px!important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
-		.button-grid-custom .ui-btn-icon-notext {width: 65px;height: 65px;}
-		.button-grid-custom .ui-btn-icon-notext .ui-btn-inner .ui-icon{margin-left: 7px;margin-bottom: 2px;margin-right: 2px;margin-top: 6px;}
-#myfb .ui-icon { background:  url("img/cust-icon/485-facebook@2x.png") no-repeat;}
-#mytwit .ui-icon { background:  url("img/cust-icon/498-twitter@2x.png") no-repeat; }
-#mymail .ui-icon { background:  url("img/cust-icon/730-envelope-selected@2x.png") no-repeat; margin-left: 5px;margin-bottom: 2px;margin-right: 2px;margin-top: 11px;}
-#myshare .ui-icon { background:  url("img/cust-icon/1024-share-selected@2x.png") no-repeat; }
-#myweb .ui-icon { background:  url("img/cust-icon/881-globe-selected@2x.png") no-repeat; }
-
-<!--Custom Popup Icons-->
-
-.button-popup-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
-		.button-popup-custom .ui-btn .ui-icon { width: 60px!important; height:60px!important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
-		.button-popup-custom .ui-btn-icon-notext {width: 65px;height: 65px;}
-#myfbp .ui-icon { background:  url("img/cust-icon/485-facebook@2x.png") no-repeat;margin-left: 8px;margin-bottom: 0px;margin-right: 0px;margin-top: 7px;}
-#mytwitp .ui-icon { background:  url("img/cust-icon/498-twitter@2x.png") no-repeat;margin-left: 8px;margin-bottom: 0px;margin-right: 0px;margin-top: 7px; }
-#mymailp .ui-icon { background:  url("img/cust-icon/730-envelope-selected@2x.png") no-repeat; margin-left: 5px;margin-bottom: 2px;margin-right: 2px;margin-top: 11px;}
-#mysharep .ui-icon { background:  url("img/cust-icon/1024-share-selected@2x.png") no-repeat;margin-left: 5px;margin-bottom: 2px;margin-right: 2px;margin-top: 11px; }
-#mywebp .ui-icon { background:  url("img/cust-icon/881-globe-selected@2x.png") no-repeat;margin-left: 4px;margin-bottom: 0px;margin-right: 0px;margin-top: 3px; }
-
-<!--responcive for small phones-->
-@media all and (max-width: 50em) {
-  .my-breakpoint .ui-block-a,.my-breakpoint .ui-block-b,.my-breakpoint .ui-block-c,.my-breakpoint .ui-block-d,.my-breakpoint .ui-block-e {width: 100%;float:none;text-align:center;}
-}
-
-
-</style>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/custom.css" />
 <link rel="stylesheet" href="css/MyADDventure.min.css" />
 <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
 <script type="text/javascript" src="phonegap.js"></script>
@@ -58,8 +18,8 @@
         
     </head>
     <body data-theme="a">
-        <!-- Start of home page -->
-        <div data-role="page" id="home">
+<!-- Start of home page -->
+<div data-role="page" id="home">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
 	<h1>My ADHDApp</h1>
@@ -83,10 +43,10 @@
     <div class="panel-content">
       <h3>Menu</h3>
      <ul data-role="listview">
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
-<!--			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
-			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>-->
-            <li><a href="#contact" data-transition="slidedown">Useful Contacts</a></li>
+			<li><a href="#adhd">ADHD</a></li>
+		    <li><a href="#tips">Tips &amp; Tricks</a></li>
+            <li><a href="#tools">ADHD Tools</a></li>
+            <li><a href="#contact">Useful Contacts</a></li>
 		</ul>
     </div><!-- /content wrapper for padding -->
   </div><!-- /menu panel -->
@@ -102,7 +62,7 @@
 	  <p><strong>App Name:</strong><br>
 	  <em>My ADHDApp</em></p>
       <p><strong>Version:</strong><br>
-	  <em>1.1.8</em></p>
+	  <em>1.2.8</em></p>
       <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Company:</strong><br><em>My ADDventure</em></p>
       <p><strong>Contact:</strong><br><em><a href="mailto:app@myaddventure.org.uk">app@myaddventure.org.uk</a></em></p>
@@ -111,25 +71,24 @@
 	</div><!-- /content -->
 </div><!-- /page -->
 
-
 <!-- Start of adhd page -->
 <div data-role="page" id="adhd">
 
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
 	<h1>ADHD</h1>
-	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	<a href="#adbout" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="#aboutadhd" data-transition="slidedown">About ADHD</a></li>
-			<li><a href="#adhdsymtoms" data-transition="slidedown">Symptoms of ADHD</a></li>
-			<li><a href="#adhdchars" data-transition="slidedown">ADHD Characteristics</a></li>
-            <li><a href="#diagadhd" data-transition="slidedown">Diagnosing ADHD</a></li>
-            <li><a href="#causeadhd" data-transition="slidedown">What causes ADHD?</a></li>
-            <li><a href="#treatadhd" data-transition="slidedown">Treatment for ADHD</a></li>
-            <li><a href="#liveadhd" data-transition="slidedown">Living with ADHD</a></li>
+			<li><a href="#aboutadhd">About ADHD</a></li>
+			<li><a href="#adhdsymtoms">Symptoms of ADHD</a></li>
+			<li><a href="#adhdchars">ADHD Characteristics</a></li>
+            <li><a href="#diagadhd">Diagnosing ADHD</a></li>
+            <li><a href="#causeadhd">What causes ADHD?</a></li>
+            <li><a href="#treatadhd">Treatment for ADHD</a></li>
+            <li><a href="#liveadhd">Living with ADHD</a></li>
 		</ul>
 	</div><!-- /content -->
 
@@ -138,10 +97,10 @@
     <div class="panel-content">
       <h3>Menu</h3>
      <ul data-role="listview">
-			<li><a href="#home" data-transition="slidedown">Home</a></li>
-<!--			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
-			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>-->
-            <li><a href="#contact" data-transition="slidedown">Useful Contacts</a></li>
+			<li><a href="#home">Home</a></li>
+		    <li><a href="#tips">Tips &amp; Tricks</a></li>
+            <li><a href="#tools">ADHD Tools</a></li>
+            <li><a href="#contact">Useful Contacts</a></li>
 		</ul>
     </div><!-- /content wrapper for padding -->
   </div><!-- /menu panel -->
@@ -321,6 +280,132 @@
     </div><!-- /content -->
 </div><!-- /about adhd page -->
 
+<!-- Start of Symptoms of ADHD-->
+<div data-role="page" id="adhdsymtoms">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>Symptoms of ADHD</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+     <p><strong>The symptoms of attention deficit hyperactivity disorder (ADHD) can be categorised into two sets of behavioural problems.</strong></p>
+<p>Symptoms include:</p>
+<ul>
+<li>inattentiveness</li>
+<li>hyperactivity and impulsiveness</li>
+</ul>
+<p>It is not fully understood whether these problems are an extreme form of normal behaviour, or part of a separate range of behaviour.</p>
+<h3><strong>Types of ADHD</strong></h3>
+<p>A person with ADHD usually has symptoms characteristic of one of the three subtypes of the condition. The subtypes are:</p>
+<ul>
+<li>ADHD mainly inattentive</li>
+<li>ADHD mainly hyperactive-impulsive</li>
+<li>ADHD combined</li>
+</ul>
+<p>If your child has symptoms of all three behavioural problems – inattentiveness, hyperactivity and impulsiveness – they may have ADHD combined, which is the most common subtype of ADHD.</p>
+<p>Alternatively, if your child has symptoms of inattentiveness but not hyperactivity or impulsiveness, they may have ADHD mainly inattentive. This form of ADHD is also known as attention deficit disorder (ADD).</p>
+<p>Childhood ADHD is more commonly diagnosed in boys than girls, but this may be because disruptive behaviour, which the diagnosis may be partly based on, tends to be more common in boys than girls.</p>
+<p>Girls with ADHD often have the mainly inattentive form of the condition, which may make them quiet and dreamy and can sometimes go unnoticed. It is therefore possible that ADHD could be underdiagnosed in girls, and could be more common than previously thought.</p>
+<h3><strong>Symptoms in children and teenagers</strong></h3>
+<p>The symptoms of ADHD in children and teenagers are well defined. The main symptoms of each behavioural problem are detailed below.</p>
+<h4>Inattentiveness</h4>
+<p>The main symptoms of inattentiveness are:</p>
+<ul>
+<li>a short attention span</li>
+<li>being easily distracted</li>
+<li>making careless mistakes, for example in schoolwork</li>
+<li>appearing forgetful or losing things</li>
+<li>being unable to stick at tasks that are tedious or time consuming</li>
+<li>being unable to listen to or carry out instructions</li>
+<li>being unable to concentrate</li>
+<li>constantly changing activity or task</li>
+<li>having difficulty organising tasks</li>
+</ul>
+<h4>Hyperactivity</h4>
+<p>The main symptoms of hyperactivity are:</p>
+<ul>
+<li>being unable to sit still, especially in calm or quiet surroundings</li>
+<li>constantly fidgeting</li>
+<li>being unable to settle to tasks</li>
+<li>excessive physical movement</li>
+<li>excessive talking</li>
+</ul>
+<h4>Impulsiveness</h4>
+<p>The main symptoms of impulsiveness are:</p>
+<ul>
+<li>being unable to wait for a turn</li>
+<li>acting without thinking</li>
+<li>interrupting conversations</li>
+<li>little or no sense of danger</li>
+</ul>
+<p>If your child has ADHD, their symptoms usually become noticeable before the age of seven, with a diagnosis usually made between the ages of three and seven.</p>
+<p>ADHD can cause problems in a child&#8217;s life, and can often lead to underachievement at school, poor social interaction with other children and adults and problems with discipline.</p>
+<h3><strong>Related conditions in children and teenagers</strong></h3>
+<p>Although not always the case, your child may also have other problems or conditions alongside ADHD. These are explained below.</p>
+<h4>Anxiety disorder</h4>
+<p>Some children with ADHD may have an anxiety disorder that causes them to worry and be nervous most of the time. Your child may also have physical symptoms, such as a rapid heartbeat, sweating and dizziness.</p>
+<h4>Oppositional defiant disorder (ODD)</h4>
+<p>Oppositional defiant disorder (ODD) is common among children with ADHD. It is defined by negative and disruptive behaviour, particularly towards authority figures such as parents and teachers.</p>
+<h4>Conduct disorder</h4>
+<p>Children who have conduct disorder have a tendency towards highly antisocial behaviour, such as:</p>
+<ul>
+<li>stealing</li>
+<li>fighting</li>
+<li>vandalism</li>
+<li>harming people</li>
+<li>harming animals</li>
+</ul>
+<p>If your child is behaving in this way, book an appointment with your doctor as soon as possible.</p>
+<h4>Depression</h4>
+<p>It is possible for children with ADHD to become depressed as a result of their condition.</p>
+<h4>Sleep problems</h4>
+<p>Children with ADHD can be hyperactive and find it difficult to sleep at night. They may experience irregular sleeping patterns.</p>
+<h4>Epilepsy</h4>
+<p>Epilepsy is a condition of the brain that causes seizures (fits).</p>
+<h4>Tourette&#8217;s syndrome</h4>
+<p>Tourette&#8217;s syndrome is a condition of the nervous system (the nerves, brain and spinal cord) that causes involuntary movements and sounds.</p>
+<h4>Learning difficulties</h4>
+<p>It is thought that around a third of children with ADHD also have learning difficulties, such as dyslexia (difficulty reading and spelling words).</p>
+<h3><strong>Symptoms in adults</strong></h3>
+<p>In adults, the symptoms of ADHD are more difficult to define. This is largely due to a lack of research into adults with ADHD.</p>
+<p>It is still uncertain whether ADHD can occur in adults without it first appearing during childhood, although it is known that symptoms of ADHD often persist from childhood into the teenage years and adulthood. Any additional problems or conditions experienced by children with ADHD, such as depression or dyslexia, are also likely to carry into adulthood.</p>
+<p>By the age of 25, an estimated 15% of people diagnosed with childhood ADHD still have a full range of symptoms, and 65% still have some symptoms that affect their daily lives.</p>
+<p>There is no definitive list of adult ADHD symptoms, and experts agree that simply applying the childhood symptoms to adults would not work. This is because the way in which inattentiveness, hyperactivity and impulsiveness affect adults is very different from the way they affect children.</p>
+<p>For example, hyperactivity tends to decrease in adults, while inattentiveness tends to get worse as the pressure of adult life increases. Also, adult symptoms of ADHD tend to be far more subtle than childhood symptoms.</p>
+<p>Below is a list of symptoms associated with adult ADHD:</p>
+<ul>
+<li>carelessness and lack of attention to detail</li>
+<li>continually starting new tasks before finishing old ones</li>
+<li>poor organisational skills</li>
+<li>inability to focus or prioritise</li>
+<li>continually losing or misplacing things</li>
+<li>forgetfulness</li>
+<li>restlessness and edginess</li>
+<li>difficulty keeping quiet and speaking out of turn</li>
+<li>blurting responses, and poor social timing when talking to others</li>
+<li>often interrupting others</li>
+<li>mood swings</li>
+<li>irritability and a quick temper</li>
+<li>inability to deal with stress</li>
+<li>extreme impatience</li>
+<li>taking risks in activities, often with little or no regard for personal safety or the safety of others</li>
+</ul>
+<p>As with ADHD in children and teenagers, ADHD in adults can appear alongside many related problems or conditions. One of the most common conditions is depression. Other conditions that adults may have alongside ADHD include:</p>
+<ul>
+<li>personality disorders</li>
+<li>bipolar disorder, a condition that affects your moods, which can swing from one extreme to another</li>
+<li>obsessive-compulsive disorder, a condition that causes obsessive thoughts and compulsive behaviour, such as cleaning constantly</li>
+</ul>
+<p>Any problems you may have had as a child are likely to persist into adulthood, which can make life extremely difficult. For example, you may have problems:</p>
+<ul>
+<li>finding and keeping employment</li>
+<li>in relationships and social interactions</li>
+<li>with drugs</li>
+<li>with crime</li>
+</ul>
+<p><em>Information taken from <a title="NHS UK | Symptoms of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Symptoms.aspx"  onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">nhs.uk</a>.</em></p>
+    </div><!-- /content -->
+</div><!-- /Symptoms adhd page -->
+
 <!-- Start of Characteristics adhd page -->
 <div data-role="page" id="adhdchars">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
@@ -467,7 +552,7 @@
 <p>If your problems are recent and did not occur regularly in the past, you are not considered as having adult ADHD.</p>
 <p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Diagnosis.aspx" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">nhs.uk</a>.</em></span></p>	
     </div><!-- /content -->
-</div><!-- /Characteristics adhd page -->
+</div><!-- /Diagnose adhd page -->
 
 <!-- Start of causes adhd page -->
 <div data-role="page" id="causeadhd">
@@ -496,7 +581,7 @@
 </ul>
 <p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Causes.aspx" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">nhs.uk</a>.</em></span></p>	
     </div><!-- /content -->
-</div><!-- /Characteristics adhd page -->
+</div><!-- /Causes adhd page -->
 
 <!-- Start of Treating adhd page -->
 <div data-role="page" id="treatadhd">
@@ -628,7 +713,7 @@
 <p>People with ADHD should take regular exercise.</p>
 <p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/Treatment.aspx" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">nhs.uk</a>.</em></span></p>	
     </div><!-- /content -->
-</div><!-- /Characteristics adhd page -->
+</div><!-- /Treat adhd page -->
 
 <!-- Start of Living with ADHD adhd page -->
 <div data-role="page" id="liveadhd">
@@ -679,10 +764,100 @@
 <p>Sleep problems and ADHD can be a vicious circle. ADHD can lead to sleep problems, which in turn can make ADHD symptoms worse. Many children with ADHD will repeatedly get up after being put to bed and have interrupted sleep patterns. Trying a sleep-friendly routine can help your child and make bedtime less of a battleground.</p>
 <p><span style="text-decoration: underline;"><em>Information taken from <a title="NHS UK | Causes of ADHD" href="http://www.nhs.uk/Conditions/Attention-deficit-hyperactivity-disorder/Pages/LivingwithADHDpage.aspx" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">nhs.uk</a>.</em></span></p>	
     </div><!-- /content -->
-</div><!-- /Characteristics adhd page -->
+</div><!-- /Living with adhd page -->
 
-        <!-- Start of home page -->
-        <div data-role="page" id="contact">
+<!-- Start of tip page -->
+<div data-role="page" id="tips">
+
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
+	<h1>ADHD</h1>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#sendtip">Submit a Tip</a></li>
+            <li><a href="#parents">Tips for Parents <span class="ui-li-count">6</span></a></li>
+            <li><a href="#teachers">Tips for Teachers <span class="ui-li-count">4</span></a></li>
+            <li><a href="#proffs">Tips for Professionals <span class="ui-li-count">1</span></a></li>
+            <li><a href="#adhdeers">Tips for ADHDeers <span class="ui-li-count">24</span></a></li>
+		</ul>
+	</div><!-- /content -->
+
+          <!-- menu panel  -->
+  <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
+    <div class="panel-content">
+      <h3>Menu</h3>
+     <ul data-role="listview">
+     		<li><a href="#home">Home</a></li>
+			<li><a href="#adhd">ADHD</a></li>
+            <li><a href="#tools">ADHD Tools</a></li>
+            <li><a href="#contact">Useful Contacts</a></li>
+		</ul>
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /menu panel -->
+</div><!-- /tip page -->
+
+<!-- Start of Submit Tip page -->
+<div data-role="page" id="sendtip">
+<script type="text/javascript">
+$(function() {
+  $('#submitbutton').click(function() {
+  alert('button clicked');
+  var name = $("input#name").val();
+  var city = $("input#city").val();
+  var tipcat = $("select#tipcat").val();
+  var tiptitle = $("input#tiptitle").val();
+  var tip = $("textarea#yourtip").val();
+  var showtip = $("select#showtip").val();
+  var emailstring = 'mailto:info@myadhdapp.co.uk?subject=New%20Tip%20Submission&body=Name:%20'+ name + 
+  '%0D%0ACity:%20'+ city + 
+  '%0D%0ACategory:%20'+ tipcat+ 
+  '%0D%0ATip%20Title:%20'+ tiptitle +
+  '%0D%0AYour%20Tip:%20'+ tip +
+  '%0D%0AShow%20Your%20Info:%20'+ showtip;
+  window.open(emailstring);
+  $("#formtip").hide();
+  $("#formsent").show();
+  return false;
+});
+});
+</script>
+<div data-theme="a" data-role="header" data-position="fixed">
+<!--<a href="#" data-icon="delete" data-theme="a" data-rel="back"></a>-->
+	<h1>Submit a Tip</h1>
+	</div><!-- /header -->
+    <div data-role="content" id="formsent" style="display:none;">
+    <p>You have sucsessfully submitted your app to My ADHDApp</p>
+    </div>
+	<div data-role="content" id="formtip">
+    <p>Submit your ADHD tip to us and help others with their ADHD day to day lives.</p>
+<form>
+				<fieldset>
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="name" class="ui-input-text"><strong>Name:</strong></label><input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></div>
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="city" class="ui-input-text"><strong>Your City:</strong></label><input type="text" name="city" id="city" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></div>
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="tipcat" class="select ui-select"><strong>Category:</strong></label><div class="ui-select"><select name="tipcat" id="tipcat">
+					<option value="For Parents">For Parents</option>
+					<option value="For Teachers">For Teachers</option>
+					<option value="For Professionals">For Professionals</option>
+					<option value="For ADHDers">For ADHDers</option>
+				</select></div></div>
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="tiptitle" class="ui-input-text"><strong>Tip Title:</strong></label><input type="text" name="tiptitle" id="tiptitle" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></div>
+<div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="yourtip" class="ui-input-text"><strong>Your Tip:</strong></label><textarea cols="40" rows="8" name="yourtip" id="yourtip" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea></div>
+<p><strong>Would you like your name and city listed next to your tip?</strong></p>
+<div class="ui-select"><select name="showtip" id="showtip">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select></div>
+<button type="submit" data-theme="a" class="ui-btn-hidden" id="submitbutton" aria-disabled="false" onClick="return false;">Submit</button>
+				</fieldset>
+			</form>
+	</div><!-- /content -->
+</div><!-- /Submit tip page -->
+
+<!-- Start of Contacts page -->
+<div data-role="page" id="contact">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
 	<h1>Useful Contacts</h1>
@@ -708,7 +883,7 @@
 We provide people-friendly information and resources about Attention Deficit Hyperactivity Disorder to anyone who needs assistance - parents, sufferers, teachers or health professionals. Whatever you're looking for in ADHD, we'll do our best to help.<p>
     <fieldset class="ui-grid-b button-popup-custom">
 	<div class="ui-block-a" align="center"><a href="http://www.facebook.com/pages/ADDISS/50690386566" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="myfbp" data-icon="custom" data-iconpos="notext" data-theme="a">Like Us</a></div>
-	<div class="ui-block-b" align="center"><a href="http://twitter.com/addissuk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
+	<div class="ui-block-b" align="center"><a href="http://twitter.com/addissuk" onclick="window.open(this.href,'_System', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
     <div class="ui-block-c" align="center"><a href="http://www.addiss.co.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mywebp" data-icon="custom" data-iconpos="notext" data-theme="a">Visit Us</a></div>   
 </fieldset>
 </div>
@@ -734,14 +909,13 @@ We provide people-friendly information and resources about Attention Deficit Hyp
     <div class="panel-content">
       <h3>Menu</h3>
      <ul data-role="listview">
-     <li><a href="#home" data-transition="slidedown">Home</a></li>
-			<li><a href="#adhd" data-transition="slidedown">ADHD</a></li>
-<!--			<li><a href="#links" data-transition="slidedown">Useful Links</a></li>
-			<li><a href="#resorces" data-transition="slidedown">Resorces</a></li>-->
+            <li><a href="#home">Home</a></li>
+			<li><a href="#adhd">ADHD</a></li>
+		    <li><a href="#tips">Tips &amp; Tricks</a></li>
+            <li><a href="#tools">ADHD Tools</a></li>
 		</ul>
     </div><!-- /content wrapper for padding -->
   </div><!-- /menu panel -->
-</div><!-- /home page -->
-
+</div><!-- /Contact page -->
     </body>
 </html>

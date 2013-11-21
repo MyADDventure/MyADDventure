@@ -1,0 +1,34 @@
+.header-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
+.header-custom .ui-btn-icon-notext .ui-btn-inner { padding-top: 3px !important; }
+		.header-custom .ui-btn .ui-icon { width: 30px!important; margin-left: 9px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		.header-custom .ui-btn-icon-notext {width: 50px;height: 30px;}
+		#info .ui-icon { background:  url("../img/cust-icon/724-info-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px; }
+		#list .ui-icon { background:  url("../img/cust-icon/1100-list-2-selected@2x.png") 50% 50% no-repeat; background-size: 18px 18px;  }
+		#back .ui-icon { background:  url("../img/cust-icon/1026-revert-selected@2x.png") 50% 50% no-repeat;  background-size: 18px 18px; }
+		
+<!--Buttons-->
+.button-grid-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
+		.button-grid-custom .ui-btn .ui-icon { width: 60px!important; height:60px!important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		.button-grid-custom .ui-btn-icon-notext {width: 65px;height: 65px;}
+		.button-grid-custom .ui-btn-icon-notext .ui-btn-inner .ui-icon{margin-left: 7px;margin-bottom: 2px;margin-right: 2px;margin-top: 6px;}
+#myfb .ui-icon { background:  url("../img/cust-icon/485-facebook@2x.png") no-repeat;}
+#mytwit .ui-icon { background:  url("../img/cust-icon/498-twitter@2x.png") no-repeat; }
+#mymail .ui-icon { background:  url("../img/cust-icon/730-envelope-selected@2x.png") no-repeat; margin-left: 5px;margin-bottom: 2px;margin-right: 2px;margin-top: 11px;}
+#myshare .ui-icon { background:  url("../img/cust-icon/1024-share-selected@2x.png") no-repeat; }
+#myweb .ui-icon { background:  url("../img/cust-icon/881-globe-selected@2x.png") no-repeat; }
+
+<!--Custom Popup Icons-->
+
+.button-popup-custom .ui-btn .ui-btn-inner { padding-top: 10px !important; }
+		.button-popup-custom .ui-btn .ui-icon { width: 60px!important; height:60px!important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+		.button-popup-custom .ui-btn-icon-notext {width: 65px;height: 65px;}
+#myfbp .ui-icon { background:  url("../img/cust-icon/485-facebook@2x.png") no-repeat;margin-left: 8px;margin-bottom: 0px;margin-right: 0px;margin-top: 7px;}
+#mytwitp .ui-icon { background:  url("../img/cust-icon/498-twitter@2x.png") no-repeat;margin-left: 8px;margin-bottom: 0px;margin-right: 0px;margin-top: 7px; }
+#mymailp .ui-icon { background:  url("../img/cust-icon/730-envelope-selected@2x.png") no-repeat; margin-left: 5px;margin-bottom: 2px;margin-right: 2px;margin-top: 11px;}
+#mysharep .ui-icon { background:  url("../img/cust-icon/1024-share-selected@2x.png") no-repeat;margin-left: 5px;margin-bottom: 2px;margin-right: 2px;margin-top: 11px; }
+#mywebp .ui-icon { background:  url("../img/cust-icon/881-globe-selected@2x.png") no-repeat;margin-left: 4px;margin-bottom: 0px;margin-right: 0px;margin-top: 3px; }
+
+<!--responcive for small phones-->
+@media all and (max-width: 50em) {
+  .my-breakpoint .ui-block-a,.my-breakpoint .ui-block-b,.my-breakpoint .ui-block-c,.my-breakpoint .ui-block-d,.my-breakpoint .ui-block-e {width: 100%;float:none;text-align:center;}
+}
