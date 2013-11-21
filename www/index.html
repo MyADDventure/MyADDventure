@@ -811,13 +811,12 @@ $(function() {
   var tiptitle = $("input#tiptitle").val();
   var tip = $("textarea#yourtip").val();
   var showtip = $("select#showtip").val();
-  var emailstring = 'mailto:info@myadhdapp.co.uk?subject=New%20Tip%20Submission&body=Name:%20'+ name + 
+  window.location.href = 'mailto:info@myadhdapp.co.uk?subject=New%20Tip%20Submission&body=Name:%20'+ name + 
   '%0D%0ACity:%20'+ city + 
   '%0D%0ACategory:%20'+ tipcat+ 
   '%0D%0ATip%20Title:%20'+ tiptitle +
   '%0D%0AYour%20Tip:%20'+ tip +
   '%0D%0AShow%20Your%20Info:%20'+ showtip;
-  window.open(emailstring);
   $("#formtip").hide();
   $("#formsent").show();
   return false;
