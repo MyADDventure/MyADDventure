@@ -22,12 +22,12 @@
 <div data-role="page" id="home">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
-	<h1>My ADHDApp</h1>
-	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	<span class="ui-title" ></span>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right">About</a>
 	</div><!-- /header -->
 	<div data-role="content">	
 	<p align="center"><img class="logo" src="img/MyADHDAPP_logo-small2.png"/></p>	   
-	<p align="center">Welcome to My ADHDApp.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available</p>	
+	<p align="center" style="margin-top:0px">Welcome to My ADHDApp.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available</p>	
 		<div class="ui-grid-b button-grid-custom" align="center">
 	<div class="ui-block-a"><strong>Facebook</strong><a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" class="notioslink" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a>
 <!--    <a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" class="isioslink" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a>-->
@@ -53,8 +53,8 @@
 
 <!-- Start of about page -->
 <div data-role="page" id="about">
-<div data-theme="a" data-role="header" data-position="fixed">
-<!--<a href="#" data-icon="delete" data-theme="a" data-rel="back"></a>-->
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>About this App</h1>
 	</div><!-- /header -->
 	<div data-role="content">	
@@ -64,7 +64,7 @@
 	  <em>1.2.9</em></p>
       <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Company:</strong><br><em>My ADDventure</em></p>
-      <p><strong>Contact:</strong><br><em><a href="mailto:developer@myadhdapp.co.uk">app@myadhdapp.co.uk</a></em></p>
+      <p><strong>Contact:</strong><br><em><a href="mailto:developer@myadhdapp.co.uk">developer@myadhdapp.co.uk</a></em></p>
       <p>This app has been developed to support ADHD and give easier access to information when on the move.</p>
       <p>&copy; 2013 My ADDventure</p>
 	</div><!-- /content -->
@@ -771,7 +771,7 @@
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
 	<h1>Tips &amp; Tricks</h1>
-	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right">About</a>
 	</div><!-- /header -->
 
 	<div data-role="content">	
@@ -1024,17 +1024,16 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
 	<h1>Useful Contacts</h1>
-	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right">About</a>
 	</div><!-- /header -->
-
 	<div data-role="content">	
-    <p>Here you will find a list of local and national organisations that support ADHD in the United Kingdom. If you run an organisation and wish to be included in the list please vist the <a href="http://www.myadhdapp.co.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">My ADHDApp</a> Web Page for more information.
+    <p>Here you will find a list of local and national organisations that support ADHD in the United Kingdom. If you run an organisation and wish to be included in the list please vist the <a href="http://www.myadhdapp.co.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">My ADHDApp</a> Web Page for more information.</p>
     <p>Just tap the logo of your chosen Organisation to view their information</p>
     <fieldset class="ui-grid-a ui-responsive">
 	<div class="ui-block-a" align="center"><a href="#addiss"><img src="img/addiss-logo.jpg" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>
 	<div class="ui-block-b" align="center"><a href="#myaddventure"><img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>	   
 </fieldset>
-
+</div>
       <!-- menu panel  -->
   <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
     <div class="panel-content">
@@ -1073,7 +1072,7 @@ We provide people-friendly information and resources about Attention Deficit Hyp
 <!-- /addiss page -->
 
 <!-- Start of My ADDventure page -->
-<div data-role="page" id="addiss">
+<div data-role="page" id="myaddventure">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>My ADDventure</h1>
@@ -1093,6 +1092,56 @@ We provide people-friendly information and resources about Attention Deficit Hyp
                 </div>
                 </div>
 <!-- /My ADDventure page -->
+
+<!-- Start of Tools page -->
+<div data-role="page" id="tools">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#menupanel" data-icon="custom" id="list" data-iconpos="notext">Menu</a>
+	<h1>Tools</h1>
+	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right">About</a>
+	</div><!-- /header -->
+	<div data-role="content">	
+    <p>There are hundreds of tools you can get to help you understand and manage the symptoms of ADHD. Here are some of those tools.</p>
+    <p>Just tap the logo to view their information.</p>
+    <fieldset class="ui-grid-a ui-responsive">
+	<div class="ui-block-a" align="center"><a href="#addcrusher"><img src="img/add-crusher-logo.jpg" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>
+	   
+</fieldset>
+</div>
+      <!-- menu panel  -->
+  <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
+    <div class="panel-content">
+      <h3>Menu</h3>
+     <ul data-role="listview">
+            <li><a href="#home">Home</a></li>
+			<li><a href="#adhd">ADHD</a></li>
+		    <li><a href="#tips">Tips &amp; Tricks</a></li>
+            <li><a href="#contact">Useful Contacts</a></li>
+		</ul>
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /menu panel -->
+</div><!-- /Tools page -->
+
+<!-- Start of ADD Crusher page -->
+<div data-role="page" id="addcrusher">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>ADD Crusher</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+<img src="img/add-crusher-logo.jpg" style="width:auto;height:auto;max-width:150px;max-height:100px;vertical-align:middle;"/>
+	<p><strong>Name:</strong> ADD Crusher</p>
+    <p><strong>Email:</strong> <a href="mailto:info@addcrusher.com ">info@addcrusher.com </a></p>
+    <p><strong>Description:</strong> Here you'll find alternative treatments for ADHD in the form of game-changing Videos and Tools that can help you crush your ADHD, escape the overwhelm and live to your potential.<p>
+    <p><strong>Special Offer:</strong> <a href="mailto:info@myadhdapp.co.uk?Subject=ADD Crusher&Body=Please send me information about ADD Crusher.">Click here</a> to recieve your 15% discount.</p> 
+    <fieldset class="ui-grid-b button-popup-custom">
+	<div class="ui-block-a" align="center"><a href="http://www.facebook.com/ADDCrusher" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="myfbp" data-icon="custom" data-iconpos="notext" data-theme="a">Like Us</a></div>
+	<div class="ui-block-b" align="center"><a href="http://twitter.com/addcrusher" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
+    <div class="ui-block-c" align="center"><a href="http://www.addcrusher.com" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mywebp" data-icon="custom" data-iconpos="notext" data-theme="a">Visit Us</a></div>   
+</fieldset>
+                </div>
+                </div>
+<!-- /ADD Crusher page -->
 
     </body>
 </html>
