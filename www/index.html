@@ -31,7 +31,7 @@
 	<p align="center">Welcome to My ADHDApp.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available</p>	
 		<div class="ui-grid-b button-grid-custom" align="center">
 	<div class="ui-block-a"><strong>Facebook</strong><a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" class="notioslink" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a>
-    <a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" class="isioslink" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a>
+<!--    <a href="http://www.facebook.com/MyADHDApp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" class="isioslink" data-role="button" id="myfb" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a>-->
     </div>
 	<div class="ui-block-b"><strong>Twitter</strong><a href="http://twitter.com/MyADHDApp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwit" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>
 	<div class="ui-block-c"><strong>Share App</strong><a onclick="window.plugins.socialsharing.share('Check out this new app for ADHD - http://www.facebook.com/myadhdapp', null, null, 'http://www.myaddventure.org.uk/myadhdapp')" id="myshare" data-icon="custom" data-iconpos="notext" data-theme="a" data-role="button">Share</a></div>
@@ -62,10 +62,10 @@
 	  <p><strong>App Name:</strong><br>
 	  <em>My ADHDApp</em></p>
       <p><strong>Version:</strong><br>
-	  <em>1.2.8</em></p>
+	  <em>1.2.9</em></p>
       <p><strong>Developer:</strong><br><em>Anthony Reynolds</em></p>
       <p><strong>Company:</strong><br><em>My ADDventure</em></p>
-      <p><strong>Contact:</strong><br><em><a href="mailto:app@myaddventure.org.uk">app@myaddventure.org.uk</a></em></p>
+      <p><strong>Contact:</strong><br><em><a href="mailto:developer@myadhdapp.co.uk">app@myadhdapp.co.uk</a></em></p>
       <p>This app has been developed to support ADHD and give easier access to information when on the move.</p>
       <p>&copy; 2013 My ADDventure</p>
 	</div><!-- /content -->
@@ -778,10 +778,11 @@
 	<div data-role="content">	
 		<ul data-role="listview">
 			<li><a href="#sendtip">Submit a Tip</a></li>
-            <li><a href="#parents">Tips for Parents <span class="ui-li-count">6</span></a></li>
-            <li><a href="#teachers">Tips for Teachers <span class="ui-li-count">4</span></a></li>
-            <li><a href="#proffs">Tips for Professionals <span class="ui-li-count">1</span></a></li>
-            <li><a href="#adhdeers">Tips for ADHDeers <span class="ui-li-count">24</span></a></li>
+            <li><a href="#parents">Tips for Parents <span class="ui-li-count">4</span></a></li>
+            <li><a href="#partners">Tips for Partners <span class="ui-li-count">3</span></a></li>
+            <li><a href="#teachers">Tips for Teachers <span class="ui-li-count">3</span></a></li>
+            <!--<li><a href="#proffs">Tips for Professionals <span class="ui-li-count">0</span></a></li>-->
+            <li><a href="#adhdeers">Tips for ADHDeers <span class="ui-li-count">3</span></a></li>
 		</ul>
 	</div><!-- /content -->
 
@@ -804,7 +805,6 @@
 <script type="text/javascript">
 $(function() {
   $('#submitbutton').click(function() {
-  alert('button clicked');
   var name = $("input#name").val();
   var city = $("input#city").val();
   var tipcat = $("select#tipcat").val();
@@ -817,8 +817,8 @@ $(function() {
   '%0D%0ATip%20Title:%20'+ tiptitle +
   '%0D%0AYour%20Tip:%20'+ tip +
   '%0D%0AShow%20Your%20Info:%20'+ showtip;
-  $("#formtip").hide();
-  $("#formsent").show();
+  alert('Thank you for sending your tip. we will let you know if it will be included in the next version.');
+$(this).closest('form').find("input[type=text], textarea").val("");
   return false;
 });
 });
@@ -838,6 +838,7 @@ $(function() {
 <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="city" class="ui-input-text"><strong>Your City:</strong></label><input type="text" name="city" id="city" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></div>
 <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br"><label for="tipcat" class="select ui-select"><strong>Category:</strong></label><div class="ui-select"><select name="tipcat" id="tipcat">
 					<option value="For Parents">For Parents</option>
+                    <option value="For Partners">For Partners</option>
 					<option value="For Teachers">For Teachers</option>
 					<option value="For Professionals">For Professionals</option>
 					<option value="For ADHDers">For ADHDers</option>
@@ -855,6 +856,173 @@ $(function() {
 	</div><!-- /content -->
 </div><!-- /Submit tip page -->
 
+<!-- Start of parent tip page -->
+<div data-role="page" id="parents">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>Tips for Parents</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p align="center">Being a parent of someone with ADHD can be like working 3 jobs. So here are some tips and tricks to help you keep balance.</p>
+<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Routine</h3>
+						<p>A routine that sticks is a routine that fits. </p>
+						<p>With any person with ADHD keeping a valid and structured routine is key. Make sure that day to day tasks such as wake up times, bed times, breakfast ect happen every day at the same time. </p>
+						<p>These are key events and should where possible stay the same. </p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Bed Time</h3>
+						<p>The ADHD mind seems to become more active at night than it should be. Try to remove stimulation from the bedroom environment </p>
+						<p>I.e TV, Computer, Toys. </p>
+						<p>This can help quite the mind and avoid stimulating the brain when it should be resting.</p>
+
+					</div>
+					<div data-role="collapsible">
+						<h3>Rewards</h3>
+						<p>We all use rewards to enthuse young people to do the things they need to do or to teach them new skills. </p>
+						<p>Children with ADHD they can learn these skills as easily as someone without ADHD. </p>
+						<p>The problem then comes to applying these skills. </p>
+						<p>If you are going to use Star Charts, reward schemes ect you should keep them going indefinitely.</p>
+					</div>
+      <div data-role="collapsible">
+		<h3>Getting Ready in the morning</h3>
+		  <p>If you struggle with getting your child ready for school in the morning, why not turn it into a competition. </p>
+		  <p>An example of this would be  the first one dressed and ready gets to  unlock the car or help scrape the ice off the windows.</p>
+      </div>
+				</div>
+                </div>
+                </div>
+<!-- /Parent Tip page -->
+
+<!-- Start of partner tip page -->
+<div data-role="page" id="partners">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>Tips for Partners</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p align="center">Being a partner of someone with ADHD can put strain on a relationship. Here are some ideas to help you develop and move forward as a couple.</p>
+<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Routine</h3>
+						<p>Your partner may struggle in their day to day routine and as such can require some external structure. </p>
+						<p>Together develop a routine that suits you both to overcome this obstacle.</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Forgetfull partner</h3>
+						<p>That short term memory can be a pain. Try sending a reminder to your partner when there is something that needs to be done. A simple text message or phone call can go a long way.</p>
+
+					</div>
+					<div data-role="collapsible">
+						<h3>Emotional Explosions</h3>
+						<p>One of the biggest symptoms of ADHD is that inability to correctly regulate emotion. </p>
+						<p>You may find that a situation has escalated further than it should have. </p>
+						<p>Take into account how your partner’s day has been before confronting them about something. </p>
+						<p>It is also good practice to use "I" statements instead of "You". </p>
+						<p>The word "You" can come across as an attack which can then escalate the situation to a mountain instead of the molehill it should have been.</p>
+						<p>An example would be &quot;I feel we should spend more time together&quot; instead of &quot;You don't pay me enough attention&quot;.</p>
+					</div>
+				</div>
+                </div>
+                </div>
+<!-- /proff Tip page -->
+
+<!-- Start of teachers tip page -->
+<div data-role="page" id="teachers">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>Tips for Teachers</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p align="center">As a teacher you have much to think about including the other 20-30 young people in your class. Here are some tips to help you get the most out of your ADHD students.</p>
+<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Getting work done</h3>
+						<p>Imagine a super computer that can generate thousands of calculations a second.</p>
+						<p> Now imagine that super computer with no monitor. </p>
+						<p>You know that it’s able to do the task but you cannot see the results. </p>
+						<p>When you are dealing with a student who has ADHD remember that they may struggle to pass information from their head to the paper in front of them. </p>
+						<p>This is because the hand moves slower and by the time they have written the first line of text they are already thinking about the tenth. </p>
+						<p>Try to set tasks section by section. I.e </p>
+						<p>Task One What is your Name </p>
+						<p>Task Two Where do you live ect..</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Keeping the focus</h3>
+						<p>Squirells can be a big distraction!! </p>
+						<p>Keep things simple and interactive. </p>
+						<p>Over stimulating or under stimulating can lead to a wondering mind. </p>
+						<p>Short and sweet with instant reward can help keep a child in the zone.</p>
+
+					</div>
+					<div data-role="collapsible">
+						<h3>Discipline and Praise</h3>
+						<p>Discipline and praise are needed for all young people, but try and avoid discipline in front of peers. </p>
+						<p>This can lead to a lower self-esteem and can also lead to distancing behaviour from the child. </p>
+						<p>Try finding 4 positives for every negative.</p>
+					</div>
+				</div>
+                </div>
+                </div>
+<!-- /teacher Tip page -->
+
+<!-- Start of profs tip page -->
+<!--<div data-role="page" id="proffs">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>Tips for Professionals</h1>
+	</div>--><!-- /header -->
+<!--	<div data-role="content">
+<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Diet</h3>
+						<p>I'm the collapsible content for section 1</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Bed Time</h3>
+						<p>I'm the collapsible content for section 2</p>
+
+					</div>
+					<div data-role="collapsible">
+						<h3>Medication</h3>
+						<p>I'm the collapsible content for section 1</p>
+					</div>
+				</div>
+                </div>
+                </div>-->
+<!-- /proff Tip page -->
+
+<!-- Start of adhdeer tip page -->
+<div data-role="page" id="adhdeers">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>Tips for ADHDeers</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <p align="center">As someone with ADHD it can feel like everything is working against you. Here we have some ideas to make like that little bit easier and less stressful.</p>
+<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Post-it notes</h3>
+						<p>Post-it notes are amazing things and can really help you keep on  top of your day to day tasks. </p>
+						<p>Write down your task and stick them somewhere you  will be able to see them.</p>
+      </div>
+					<div data-role="collapsible">
+						<h3>Loosing your keys</h3>
+						<p>If you are prone to loosing your keys why not put a hook near your door where you can hang them as soon as you come in.</p>
+
+					</div>
+					<div data-role="collapsible">
+						<h3>Forgetting Appointments</h3>
+						<p>If you have appointments then set up reminders in your phone, use a calendar application or even tell someone else so they can remind you. </p>
+						<p>Do this as soon as you receive the appointment as you may have forgotten in 10 minutes.</p>
+					</div>
+				</div>
+                </div>
+                </div>
+<!-- /adhdeer Tip page -->
+
+
 <!-- Start of Contacts page -->
 <div data-role="page" id="contact">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
@@ -867,8 +1035,8 @@ $(function() {
     <p>Here you will find a list of local and national organisations that support ADHD in the United Kingdom. If you run an organisation and wish to be included in the list please vist the <a href="http://www.myaddventure.org.uk/myadhdapp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">My ADHDApp</a> Web Page for more information.
     <p>Just tap the logo of your chosen Organisation to view their information</p>
     <fieldset class="ui-grid-a ui-responsive">
-	<div class="ui-block-a" align="center"><a href="#addiss" data-rel="popup"><img src="img/addiss-logo.jpg" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>
-	<div class="ui-block-b" align="center"><a href="#myaddventure" data-rel="popup"><img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>	   
+	<div class="ui-block-a" align="center"><a href="#addiss" data-rel="popup" data-position-to="window"><img src="img/addiss-logo.jpg" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>
+	<div class="ui-block-b" align="center"><a href="#myaddventure" data-rel="popup" data-position-to="window"><img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>	   
 </fieldset>
 
 <div data-role="popup" id="addiss">
@@ -877,7 +1045,7 @@ $(function() {
 	<p><strong>Name:</strong> ADDISS<p>
     <p><strong>Location:</strong> National<p>
     <p><strong>Telephone:</strong> <a href="tel:020 8952 2800">020 8952 2800</a><p>
-    <p><strong>Email:</strong> <a href="mailto:info@addiss.co.uk">info@addiss.org.uk</a><p>
+    <p><strong>Email:</strong> <a href="mailto:info@addiss.co.uk">info@addiss.co.uk</a><p>
     <p><strong>Description:</strong> ADDISS, The National Attention Deficit Disorder Information and Support Service. <br>
 We provide people-friendly information and resources about Attention Deficit Hyperactivity Disorder to anyone who needs assistance - parents, sufferers, teachers or health professionals. Whatever you're looking for in ADHD, we'll do our best to help.<p>
     <fieldset class="ui-grid-b button-popup-custom">

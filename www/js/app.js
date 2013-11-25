@@ -35,7 +35,7 @@ function myAppLogic()
 {
 $( ".selector" ).dialog( "close" );
 $.mobile.buttonMarkup.hoverDelay = 40;
-var devicePlatform = device.platform;
+/*var devicePlatform = device.platform;
 		
 	if(devicePlatform == 'android' || devicePlatform == 'Android' || devicePlatform == 'WinCE' || devicePlatform == 'wince' || devicePlatform == 'Win32NT' || devicePlatform == 'win32nt')
 	{
@@ -54,5 +54,5 @@ var devicePlatform = device.platform;
 	{
 		$('.notioslink').remove();
 	}
-
+*/
 }
