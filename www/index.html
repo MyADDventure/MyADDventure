@@ -25,7 +25,6 @@
 	<h1>My ADHDApp</h1>
 	<a href="#about" data-icon="custom" id="info" data-iconpos="notext" class="ui-btn-right" data-rel="dialog" data-transition="slidedown">About</a>
 	</div><!-- /header -->
-
 	<div data-role="content">	
 	<p align="center"><img class="logo" src="img/MyADHDAPP_logo-small2.png"/></p>	   
 	<p align="center">Welcome to My ADHDApp.<br>Here you can find all the latest information about ADHD in the UK, Useful links, contacts and resources on ADHD available</p>	
@@ -823,14 +822,11 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 });
 });
 </script>
-<div data-theme="a" data-role="header" data-position="fixed">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
 	<h1>Submit a Tip</h1>
 	</div><!-- /header -->
-    <div data-role="content" id="formsent" style="display:none;">
-    <p>You have sucsessfully submitted your app to My ADHDApp</p>
-    </div>
-	<div data-role="content" id="formtip">
+	<div data-role="content">
     <p>Submit your ADHD tip to us and help others with their ADHD day to day lives.</p>
 <form>
 				<fieldset>
@@ -860,7 +856,7 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 <div data-role="page" id="parents">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
-	<h1>Tips for Parents</h1>
+	<h1>For Parents</h1>
 	</div><!-- /header -->
 	<div data-role="content">
     <p align="center">Being a parent of someone with ADHD can be like working 3 jobs. So here are some tips and tricks to help you keep balance.</p>
@@ -899,7 +895,7 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 <div data-role="page" id="partners">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
-	<h1>Tips for Partners</h1>
+	<h1>For Partners</h1>
 	</div><!-- /header -->
 	<div data-role="content">
     <p align="center">Being a partner of someone with ADHD can put strain on a relationship. Here are some ideas to help you develop and move forward as a couple.</p>
@@ -932,7 +928,7 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 <div data-role="page" id="teachers">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
-	<h1>Tips for Teachers</h1>
+	<h1>For Teachers</h1>
 	</div><!-- /header -->
 	<div data-role="content">
     <p align="center">As a teacher you have much to think about including the other 20-30 young people in your class. Here are some tips to help you get the most out of your ADHD students.</p>
@@ -997,7 +993,7 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 <div data-role="page" id="adhdeers">
 <div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
 <a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
-	<h1>Tips for ADHDeers</h1>
+	<h1>For ADHDeers</h1>
 	</div><!-- /header -->
 	<div data-role="content">
     <p align="center">As someone with ADHD it can feel like everything is working against you. Here we have some ideas to make like that little bit easier and less stressful.</p>
@@ -1032,44 +1028,12 @@ $(this).closest('form').find("input[type=text], textarea").val("");
 	</div><!-- /header -->
 
 	<div data-role="content">	
-    <p>Here you will find a list of local and national organisations that support ADHD in the United Kingdom. If you run an organisation and wish to be included in the list please vist the <a href="http://www.myaddventure.org.uk/myadhdapp" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">My ADHDApp</a> Web Page for more information.
+    <p>Here you will find a list of local and national organisations that support ADHD in the United Kingdom. If you run an organisation and wish to be included in the list please vist the <a href="http://www.myadhdapp.co.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;">My ADHDApp</a> Web Page for more information.
     <p>Just tap the logo of your chosen Organisation to view their information</p>
     <fieldset class="ui-grid-a ui-responsive">
-	<div class="ui-block-a" align="center"><a href="#addiss" data-rel="popup" data-position-to="window"><img src="img/addiss-logo.jpg" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>
-	<div class="ui-block-b" align="center"><a href="#myaddventure" data-rel="popup" data-position-to="window"><img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>	   
+	<div class="ui-block-a" align="center"><a href="#addiss"><img src="img/addiss-logo.jpg" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>
+	<div class="ui-block-b" align="center"><a href="#myaddventure"><img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:200px;max-height:200px;vertical-align:middle;"/></a></div>	   
 </fieldset>
-
-<div data-role="popup" id="addiss">
-<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-<img src="img/addiss-face.jpg" style="width:auto;height:auto;max-width:100px;max-height:100px;vertical-align:middle;"/>
-	<p><strong>Name:</strong> ADDISS<p>
-    <p><strong>Location:</strong> National<p>
-    <p><strong>Telephone:</strong> <a href="tel:020 8952 2800">020 8952 2800</a><p>
-    <p><strong>Email:</strong> <a href="mailto:info@addiss.co.uk">info@addiss.co.uk</a><p>
-    <p><strong>Description:</strong> ADDISS, The National Attention Deficit Disorder Information and Support Service. <br>
-We provide people-friendly information and resources about Attention Deficit Hyperactivity Disorder to anyone who needs assistance - parents, sufferers, teachers or health professionals. Whatever you're looking for in ADHD, we'll do our best to help.<p>
-    <fieldset class="ui-grid-b button-popup-custom">
-	<div class="ui-block-a" align="center"><a href="http://www.facebook.com/pages/ADDISS/50690386566" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="myfbp" data-icon="custom" data-iconpos="notext" data-theme="a">Like Us</a></div>
-	<div class="ui-block-b" align="center"><a href="http://twitter.com/addissuk" onclick="window.open(this.href,'_System', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
-    <div class="ui-block-c" align="center"><a href="http://www.addiss.co.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mywebp" data-icon="custom" data-iconpos="notext" data-theme="a">Visit Us</a></div>   
-</fieldset>
-</div>
-
-<div data-role="popup" id="myaddventure">
-<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
-<img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:150px;max-height:100px;vertical-align:middle;"/>
-	<p><strong>Name:</strong> My ADDventure<p>
-    <p><strong>Location:</strong> Greater Manchester<p>
-    <p><strong>Telephone:</strong> <a href="tel:0161 818 4523">0161 818 4523</a><p>
-    <p><strong>Email:</strong> <a href="mailto:info@myaddventure.org.uk">info@myaddventure.org.uk</a><p>
-    <p><strong>Description:</strong> My ADDventure is the Greater Manchester Charity for the support and awarness of ADHD in all affected.<p>
-    <fieldset class="ui-grid-b button-popup-custom">
-	<div class="ui-block-a" align="center"><a href="http://www.facebook.com/MyADDventure" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="myfbp" data-icon="custom" data-iconpos="notext" data-theme="a">Like Us</a></div>
-	<div class="ui-block-b" align="center"><a href="http://twitter.com/MyADDventure" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
-    <div class="ui-block-c" align="center"><a href="http://www.myaddventure.org.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mywebp" data-icon="custom" data-iconpos="notext" data-theme="a">Visit Us</a></div>   
-</fieldset>
-</div>
-	</div><!-- /content -->
 
       <!-- menu panel  -->
   <div data-role="panel" id="menupanel" data-theme="a" data-position="left" data-display="push">	
@@ -1084,5 +1048,51 @@ We provide people-friendly information and resources about Attention Deficit Hyp
     </div><!-- /content wrapper for padding -->
   </div><!-- /menu panel -->
 </div><!-- /Contact page -->
+
+<!-- Start of addiss page -->
+<div data-role="page" id="addiss">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>ADDISS</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    <img src="img/addiss-face.jpg" style="width:auto;height:auto;max-width:100px;max-height:100px;vertical-align:middle;"/>
+	<p><strong>Name:</strong> ADDISS
+    <p><strong>Location:</strong> National
+    <p><strong>Telephone:</strong> <a href="tel:020 8952 2800">020 8952 2800</a>
+    <p><strong>Email:</strong> <a href="mailto:info@addiss.co.uk">info@addiss.co.uk</a>
+    <p><strong>Description:</strong> ADDISS, The National Attention Deficit Disorder Information and Support Service. <br>
+We provide people-friendly information and resources about Attention Deficit Hyperactivity Disorder to anyone who needs assistance - parents, sufferers, teachers or health professionals. Whatever you're looking for in ADHD, we'll do our best to help.<p>
+    <fieldset class="ui-grid-b button-popup-custom">
+	<div class="ui-block-a" align="center"><a href="http://www.facebook.com/pages/ADDISS/50690386566" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="myfbp" data-icon="custom" data-iconpos="notext" data-theme="a">Like Us</a></div>
+	<div class="ui-block-b" align="center"><a href="http://twitter.com/addissuk" onclick="window.open(this.href,'_System', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
+    <div class="ui-block-c" align="center"><a href="http://www.addiss.co.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mywebp" data-icon="custom" data-iconpos="notext" data-theme="a">Visit Us</a></div>   
+</fieldset>
+                </div>
+                </div>
+<!-- /addiss page -->
+
+<!-- Start of My ADDventure page -->
+<div data-role="page" id="addiss">
+<div data-theme="a" data-role="header" data-position="fixed" class="header-custom">
+<a href="#" data-rel="back" data-icon="custom" id="back" data-iconpos="notext">back</a>
+	<h1>My ADDventure</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+<img src="img/MyADDventure-Logo-small-190.png" style="width:auto;height:auto;max-width:150px;max-height:100px;vertical-align:middle;"/>
+	<p><strong>Name:</strong> My ADDventure
+    <p><strong>Location:</strong> Greater Manchester
+    <p><strong>Telephone:</strong> <a href="tel:0161 818 4523">0161 818 4523</a>
+    <p><strong>Email:</strong> <a href="mailto:info@myaddventure.org.uk">info@myaddventure.org.uk</a>
+    <p><strong>Description:</strong> My ADDventure is the Greater Manchester Charity for the support and awarness of ADHD in all affected.<p>
+    <fieldset class="ui-grid-b button-popup-custom">
+	<div class="ui-block-a" align="center"><a href="http://www.facebook.com/MyADDventure" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="myfbp" data-icon="custom" data-iconpos="notext" data-theme="a">Like Us</a></div>
+	<div class="ui-block-b" align="center"><a href="http://twitter.com/MyADDventure" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mytwitp" data-icon="custom" data-iconpos="notext" data-theme="a">Follow Us</a></div>	
+    <div class="ui-block-c" align="center"><a href="http://www.myaddventure.org.uk" onclick="window.open(this.href,'_blank', 'location=yes, closebuttoncaption=Close'); return false;" data-role="button" id="mywebp" data-icon="custom" data-iconpos="notext" data-theme="a">Visit Us</a></div>   
+</fieldset>
+                </div>
+                </div>
+<!-- /My ADDventure page -->
+
     </body>
 </html>

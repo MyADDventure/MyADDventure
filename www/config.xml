@@ -53,6 +53,7 @@
 	<gap:plugin name="nl.x-services.plugins.socialsharing" />
 	<gap:plugin name="org.apache.cordova.device" />	
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<gap:plugin name="de.phonostar.softkeyboard" />
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
